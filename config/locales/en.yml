@@ -20,4 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
+  projects: "Projects"
+  about: "About"
+  contact: "Contact"
+
+  address: "Rua Santo Antônio, 366. Sala 04 BRAZIL"

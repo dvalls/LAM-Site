@@ -12,11 +12,16 @@
         = image_tag 'logo.png'
 
       %nav
-        =t :hello
-        = yield
+        =t :projects
+        =t :about
+        =t :contact
+
       %main
+        PROJETOS
+        = yield
 
       %footer
+        =t :address
 
 
 
