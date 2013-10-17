@@ -1,0 +1,22 @@
+!!! 5
+%html
+  %head
+    %title= "LAM"
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    .container
+      %header
+        = image_tag 'logo.png'
+
+      %nav
+        =t :hello
+        = yield
+      %main
+
+      %footer
+
+
+
