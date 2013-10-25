@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+// change colors
+$body-bg: #EBEBEB;
+
+
+// Typography
+$font-family-base: 'Roboto', helvetica, arial;
+$font-size-base: 10px;
+
+.container {background-color: #ffffff}
+
+// import original bootstrap
+@import "twitter/bootstrap";
+
+body {
+    /*background-color: rgb(235, 235, 235);*/
+   /* font-size: 0.6em;*/
+}
+
+#primaryContainer {
+    position: relative;
+    height: auto;
+    margin: 0px auto;
+    min-height: 100%;
+    width: 1200px;
+    padding: 50px;
+    float: none;
+    clear: none;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+
+header {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin: 0 0 50px;
+}
+
+#contentContainer {
+  width: 100%;
+}
+
+
+nav {
+  min-height: 100%;
+  float: left;
+  clear: both;
+  width: 189px;
+}
+
+main {
+  position: relative;
+  float: left;
+  width: 889px;
+  margin: 0 0 0 2%;
+}
+
+#footnote {
+  bottom: 50px;
+  position:absolute;
+
+}
+
+address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bottom: 30px}
+
+ul.social li {display: inline; padding: 3px}
+ul.social {margin-bottom: 25px;}
+

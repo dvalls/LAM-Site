@@ -1,24 +1,15 @@
 pt-BR:
-  # nav
-  projects: "Projetos"
-  about: "Escritório"
-  contact: "Contato"
+  projects: PROJETOS
+  about: ESCRITÓRIO
+  contact: CONTATO
 
 
-  #footer
-  address: "Rua Santo Antônio 366"
+  phone: +51 8138-8758
+  email: CONTATO@STUDIOLAM.COM.BR
+  address: |
+    RUA SANTO ANTÔNIO, 366. SALA 04
+    BAIRRO INDEPENDÊNCIA
+    PORTO ALEGRE - RS
+    CEP 90220-011
+  copyright: 2013 -  TODOS DIREITOS RESERVADOS
 
-
-
-  date:
-    formats:
-      default: "%d/%m/%Y"
-      short: "%d de %B"
-      long: "%d de %B de %Y"
-      only_day: "%d"
-
-    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
-    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
-    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
-    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
-    order: [ :day, :month, :year ]

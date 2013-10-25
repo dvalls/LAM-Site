@@ -1,0 +1,14 @@
+=image_tag('carrossel.jpg')
+%ul.feed
+  - @feeds.each do |feed|
+    %li
+      =image_tag feed.image
+      %h2= feed.title
+      %p
+        = markdown(feed.body)
+        = feed.updated_at
+        = link_to 'Show', feed
+        = link_to 'Edit', edit_feed_path(feed)
+        = link_to 'Destroy', feed, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%i.fa.fa-chevron-up

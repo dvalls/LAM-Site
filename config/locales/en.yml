@@ -21,8 +21,16 @@
 
 en:
 
-  projects: "Projects"
-  about: "About"
-  contact: "Contact"
+  projects: PROJECTS
+  about: ABOUT
+  contact: CONTACT
 
-  address: "Rua Santo Antônio, 366. Sala 04 BRAZIL"
+  phone: +55 (51) 8138-8758
+  email: CONTATO@STUDIOLAM.COM.BR
+  address:
+    SANTO ANTÔNIO ST, 366.
+    INDEPENDÊNCIA, PORTO ALEGRE
+
+
+  copyright: 2013 -  ALL RIGHTS RESERVED
+

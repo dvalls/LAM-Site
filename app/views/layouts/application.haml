@@ -1,27 +1,57 @@
 !!! 5
 %html
   %head
-    %title= "LAM"
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    %title= "studioLAM"
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    %link{href: "http://fonts.googleapis.com/css?family=Roboto:300", rel: "stylesheet", type: "text/css"}
+    %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css", rel: "stylesheet"}
+    //%link{href: "//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel: "stylesheet"}
+    //%script{:src=>"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"}
     = csrf_meta_tags
 
   %body
     .container
       %header
-        = image_tag 'logo.png'
+        =link_to(image_tag('logo.jpg'), root_path)
 
-      %nav
-        =t :projects
-        =t :about
-        =t :contact
+      #contentContainer
+        %nav
+          %ul
+            %li=link_to(t(:projects), '#')
+            %li=link_to(t(:about), '#')
+            %li=link_to(t(:contact), '#')
 
-      %main
-        PROJETOS
-        = yield
+          #footnote
+            %ul.social
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-facebook.fa-2x
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-instagram.fa-2x
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-pinterest.fa-2x
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-twitter.fa-2x
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-vimeo-square.fa-2x
+              %li
+                =link_to 'ddddd' do
+                  %i.fa.fa-google-plus.fa-2x
 
-      %footer
-        =t :address
+            %p=t :phone
+            %p=t :email
+            %address=t(:address)
+            =t :copyright
+
+        %main
+          = yield
+
 
 
 

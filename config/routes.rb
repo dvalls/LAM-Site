@@ -1,4 +1,6 @@
 LAMSite::Application.routes.draw do
+  resources :feeds
+
   root "home#index"
 
 
