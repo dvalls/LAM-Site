@@ -1,4 +1,34 @@
-=image_tag('carrossel.jpg')
+#carousel.carousel.slide.row
+  // Carousel buttons
+  %a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
+    %span.icon-prev
+  %a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
+    %span.icon-next
+
+  // end Carousel buttons
+
+  // Carousel slides
+  .carousel-inner
+    .item
+      .carousel-caption
+        %h3 First slide label
+        =image_tag('carrossel.jpg')
+    .item.active
+      .carousel-caption
+        %h3 Second slide label
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .item
+      .carousel-caption
+        %h3 Third slide label
+        %p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+
+
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel"}
+  // end carousel slides
+
 %ul.feed
   - @feeds.each do |feed|
     %li

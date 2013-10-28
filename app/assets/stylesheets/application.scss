@@ -13,68 +13,72 @@
  */
 
 
-// change colors
+// BG color
 $body-bg: #EBEBEB;
+
+// Grid
+$container-lg-desktop: 1200px;
+$grid-columns: 12;
+$grid-gutter-width:30px;
 
 
 // Typography
 $font-family-base: 'Roboto', helvetica, arial;
 $font-size-base: 10px;
 
-.container {background-color: #ffffff}
 
-// import original bootstrap
-@import "twitter/bootstrap";
+// Color
+$brand-primary: black;
 
-body {
-    /*background-color: rgb(235, 235, 235);*/
-   /* font-size: 0.6em;*/
-}
 
-#primaryContainer {
-    position: relative;
-    height: auto;
-    margin: 0px auto;
-    min-height: 100%;
-    width: 1200px;
-    padding: 50px;
-    float: none;
-    clear: none;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-}
+.container {background-color: #ffffff; min-height: 100%; height: 100%;}
+.row {padding: 0 50px 0 50px}
+
+#carousel {height:450px; background-color: gray}
+
+//#primaryContainer {
+//    position: relative;
+//    height: auto;
+//    margin: 0px auto;
+//    min-height: 100%;
+//    width: 1200px;
+//    padding: 50px;
+//    float: none;
+//    clear: none;
+//    background-color: rgb(255, 255, 255);
+//    overflow: hidden;
+//}
 
 
 header {
-    float: left;
-    clear: none;
-    width: 100%;
+    //float: left;
+    //clear: none;
+    //width: 100%;
     margin: 0 0 50px;
 }
 
-#contentContainer {
-  width: 100%;
-}
 
-
+//
 nav {
-  min-height: 100%;
-  float: left;
-  clear: both;
-  width: 189px;
+  //min-height: 100%;
+  //height: auto;
+  padding-left: 0;
+  //margin:0 auto
+  //float: left;
+  //clear: both;
+  //width: 189px;
 }
-
-main {
-  position: relative;
-  float: left;
-  width: 889px;
-  margin: 0 0 0 2%;
-}
+//
+//main {
+//  position: relative;
+//  float: left;
+//  width: 889px;
+//  margin: 0 0 0 2%;
+//}
 
 #footnote {
-  bottom: 50px;
-  position:absolute;
-
+  //bottom: 50px;
+  //position:absolute;
 }
 
 address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bottom: 30px}
@@ -82,3 +86,7 @@ address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bo
 ul.social li {display: inline; padding: 3px}
 ul.social {margin-bottom: 25px;}
 
+
+
+// import original bootstrap
+@import "twitter/bootstrap";

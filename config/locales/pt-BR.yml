@@ -1,7 +1,13 @@
 pt-BR:
-  projects: PROJETOS
-  about: ESCRITÓRIO
-  contact: CONTATO
+
+  meta:
+    description: Site do Studio LAM
+    keywords: Arquitetura Porto Alegre, ...
+
+  nav:
+    projects: PROJETOS
+    about: ESCRITÓRIO
+    contact: CONTATO
 
 
   phone: +51 8138-8758

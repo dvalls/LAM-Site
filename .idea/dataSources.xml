@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3891333360">
+  <component name="DataSourceManagerImpl" format="xml" hash="561339729">
     <data-source source="LOCAL" name="Rails LAM Site: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="bb7c2981-351b-4762-b546-8ce83da38ae2">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\dvalls\RubymineProjects\LAM Site\db\development.sqlite3</jdbc-url>
