@@ -4,12 +4,19 @@ gem 'rails', '4.0.0'
 
 gem 'sqlite3'
 
-
+# View and Stylish
 gem 'haml-rails'
 gem 'sass-rails'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :branch => '3.0.0'
+gem 'simple_form'
 
+
+# Upload
+gem 'carrierwave'
+
+# I18n
 gem 'rails-i18n', '~> 4.0.0'
+gem 'globalize', '~> 4.0.0.alpha.2'
 
 gem 'redcarpet'
 

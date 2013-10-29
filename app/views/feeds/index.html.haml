@@ -1,23 +1,15 @@
-%h1 Listing feeds
+%h3 Notícias
 
-%table
-  %tr
-    %th Title
-    %th Body
-    %th Image
-    %th
-    %th
-    %th
-
+%ul.feeds.list-unstyled
   - @feeds.each do |feed|
-    %tr
-      %td= feed.title
-      %td= feed.body
-      %td= feed.image
-      %td= link_to 'Show', feed
-      %td= link_to 'Edit', edit_feed_path(feed)
-      %td= link_to 'Destroy', feed, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
+    %li
+      %h3= feed.title
+      =image_tag feed.image unless feed.image.blank?
+      %p= markdown(feed.body)
+      %p=l feed.updated_at.to_date, format: :default
+      %p
+        = link_to 'Show', feed
+        = link_to 'Edit', edit_feed_path(feed)
+        = link_to 'Destroy', feed, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 = link_to 'New Feed', new_feed_path

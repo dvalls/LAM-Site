@@ -1,7 +1,12 @@
 LAMSite::Application.routes.draw do
-  resources :feeds
-
   root "home#index"
+
+    resources :projects
+    resources :feeds
+
+    resource :about
+    resource :contact
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

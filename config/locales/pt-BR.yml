@@ -19,3 +19,6 @@ pt-BR:
     CEP 90220-011
   copyright: 2013 -  TODOS DIREITOS RESERVADOS
 
+  date:
+    formats:
+          default: ! '%d/%m/%Y'

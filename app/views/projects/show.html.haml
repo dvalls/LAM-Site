@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @project.title
+%p
+  %b Description:
+  = @project.description
+%p
+  %b Body:
+  = @project.body
+%p
+  %b Year:
+  = @project.year
+
+= link_to 'Edit', edit_project_path(@project)
+\|
+= link_to 'Back', projects_path
