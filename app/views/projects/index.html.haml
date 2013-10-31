@@ -5,39 +5,26 @@
   #options.clearfix.nav
     %ul.list-unstyled#filters.option-set{"data-option-key" => "filter"}
       %li
-        %a{"data-option-value" => "*", href: "#filter"} ARQUITETURA
-      %li
-        %a.selected{"data-option-value" => ".metal", href: "#filter"} ENGENHARIA
-      %li
-        %a{"data-option-value" => ".transition", href: "#filter"} LAB
-      %li
-        %a{"data-option-value" => ".post-transition", href: "#filter"} post-transition
-      %li
-        %a{"data-option-value" => ".nonmetal", href: "#filter"} nonmetal
-      %li
-        %a{"data-option-value" => ".inner-transition", href: "#filter"} inner-transition
-      %li
-        %a{"data-option-value" => ".alkali, .alkaline-earth", href: "#filter"} alkali and alkaline-earth
-      %li
-        %a{"data-option-value" => ":not(.transition)", href: "#filter"} not transition
-      %li
-        %a{"data-option-value" => ".metal:not(.transition)", href: "#filter"} metal but not transition
+        %a{"data-option-value" => "*", href: "#filter"}= t 'nav.all_projects'
+      - @project_tags.each do |tag|
+        %li
+          %a{"data-option-value" => ".#{tag}", href: "#filter"}= tag.to_s.upcase
 
 / Grid Projects
 #grid_projects.row
   - @projects.each do |project|
-    .project.col-lg-4{"data-category" => "transition"}
-      %h3= project.title
-      %p= project.description
-      %p
-        = link_to 'Show', project
-        = link_to 'Edit', edit_project_path(project)
-        = link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    .project.col-lg-4{:class => "#{project.tag_list.join(" ")}" }
+      = link_to project do
+        .lighter= image_tag 'TESTE.jpg', :height => 161
+        %h3= project.title
+        %p
+          = project.description
+          =project.tag_list
 
 
 / Isotope scripts
 = javascript_include_tag "jquery.isotope.min", "isotope"
-= stylesheet_link_tag "isotope"
+= stylesheet_link_tag "isotope", "projects"
 
 
 = link_to 'New Project', new_project_path

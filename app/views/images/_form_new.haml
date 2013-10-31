@@ -1,0 +1,8 @@
+= simple_form_for([@imageable, @image],:html => {:multipart => true}) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :url, as: :file, :input_html => { :multiple => true }
+
+  .form-actions
+    = f.button :submit

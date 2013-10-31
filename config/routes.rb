@@ -1,11 +1,22 @@
 LAMSite::Application.routes.draw do
+
   root "home#index"
 
-    resources :projects
-    resources :feeds
+  resources :projects
+  resources :feeds
+  resources :tags
+  resources :images
 
-    resource :about
-    resource :contact
+  resource :about
+  resource :contact
+
+  resources :projects do
+    resources :images
+  end
+
+  namespace :admin do
+    resources :tags
+  end
 
 
 

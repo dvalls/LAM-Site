@@ -1,18 +1,13 @@
-%p#notice= notice
+%h1= @project.title
+%p= @project.description
+%p= @project.tag_list
+%p= @project.year
 
-%p
-  %b Title:
-  = @project.title
-%p
-  %b Description:
-  = @project.description
-%p
-  %b Body:
-  = @project.body
-%p
-  %b Year:
-  = @project.year
+%p= markdown @project.body unless @project.body.nil?
+
 
 = link_to 'Edit', edit_project_path(@project)
-\|
+|
+= link_to 'Apagar', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }
+|
 = link_to 'Back', projects_path
