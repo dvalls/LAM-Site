@@ -3,7 +3,7 @@
 
   = f.input :title
   = f.input :body, as: :text, input_html: {'data-provide' => 'markdown',  :rows => '10'}
-  = f.input :images, as: :file
+  = f.input :image, as: :file
 
   .form-actions
     = f.submit 'Save'
