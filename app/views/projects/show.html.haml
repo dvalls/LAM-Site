@@ -1,6 +1,6 @@
+%p= @project.tag_list
 %h1= @project.title
 %p= @project.description
-%p= @project.tag_list
 %p= @project.year
 
 %p= markdown @project.body unless @project.body.nil?
