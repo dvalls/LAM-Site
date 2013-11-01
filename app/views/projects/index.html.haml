@@ -13,11 +13,11 @@
   - @projects.each do |project|
     .project.col-lg-4{:class => "#{project.tag_list.join(" ")}" }
       = link_to project do
-        .lighter= image_tag 'TESTE.jpg', :height => 161
-        %h3= project.title
+        .lighter= image_tag project.cover_image.url, :height => 161
         %p
-          = project.description
           = project.tag_list
+          |
+          = project.title
 
 
 / Isotope scripts
@@ -25,4 +25,4 @@
 = stylesheet_link_tag "isotope", "projects"
 
 
-= link_to 'New Project', new_project_path
+= link_to('NOVO PROJETO', new_project_path, :class => 'btn btn-default') if signed_in?

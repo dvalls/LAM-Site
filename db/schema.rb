@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131030191042) do
+ActiveRecord::Schema.define(version: 20131101182745) do
 
   create_table "about_translations", force: true do |t|
     t.integer  "about_id",   null: false
@@ -27,6 +27,25 @@ ActiveRecord::Schema.define(version: 20131030191042) do
   create_table "abouts", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "carousel_translations", force: true do |t|
+    t.integer  "carousel_id", null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.string   "description"
+  end
+
+  add_index "carousel_translations", ["carousel_id"], name: "index_carousel_translations_on_carousel_id"
+  add_index "carousel_translations", ["locale"], name: "index_carousel_translations_on_locale"
+
+  create_table "carousels", force: true do |t|
+    t.integer "project_id"
+    t.string  "title"
+    t.string  "description"
+    t.string  "image_url"
   end
 
   create_table "contact_translations", force: true do |t|
@@ -108,6 +127,7 @@ ActiveRecord::Schema.define(version: 20131030191042) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+    t.string   "cover_image"
   end
 
   add_index "projects", ["slug"], name: "index_projects_on_slug", unique: true
@@ -139,5 +159,18 @@ ActiveRecord::Schema.define(version: 20131030191042) do
   create_table "tags", force: true do |t|
     t.string "name"
   end
+
+  create_table "users", force: true do |t|
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "email",                          null: false
+    t.string   "encrypted_password", limit: 128, null: false
+    t.string   "confirmation_token", limit: 128
+    t.string   "remember_token",     limit: 128, null: false
+    t.string   "salt",               limit: 128
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email"
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end

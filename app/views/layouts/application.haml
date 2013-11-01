@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title= "studioLAM"
+    %title= content_for?(:title) ? yield(:title) : "studioLAM"
 
     / SEO
     %meta{name:"description", :content => t('meta.description')}
@@ -31,8 +31,8 @@
             %nav.nav.col-lg-4
               %ul.list-unstyled
                 %li=link_to(t('nav.projects'), projects_path)
-                %li=link_to(t('nav.about'), :controller => :abouts, :action => :show)
-                %li=link_to(t('nav.contact'), :controller => :contacts, :action => :show)
+                -#%li=link_to(t('nav.about'), :controller => :abouts, :action => :show)
+                -#%li=link_to(t('nav.contact'), :controller => :contacts, :action => :show)
 
             .col-lg-8
               = yield :menu
@@ -45,22 +45,22 @@
           / Footer
           %footer
             %ul.social
-              %li
-                =link_to 'ddddd' do
+              %li{:title => "FB.COM/STUDIOLAM.POA", "data-toggle" => "tooltip"}
+                =link_to 'ddddd'  do
                   %i.fa.fa-facebook.fa-2x
-              %li
+              %li{:title => "INSTAGRAM", "data-toggle" => "tooltip"}
                 =link_to 'ddddd' do
                   %i.fa.fa-instagram.fa-2x
-              %li
+              %li{:title => "PINTEREST", "data-toggle" => "tooltip"}
                 =link_to 'ddddd' do
                   %i.fa.fa-pinterest.fa-2x
-              %li
+              %li{:title => "TWITTER", "data-toggle" => "tooltip"}
                 =link_to 'ddddd' do
                   %i.fa.fa-twitter.fa-2x
-              %li
+              %li{:title => "VIMEO", "data-toggle" => "tooltip"}
                 =link_to 'ddddd' do
                   %i.fa.fa-vimeo-square.fa-2x
-              %li
+              %li{:title => "GOOGLE+", "data-toggle" => "tooltip"}
                 =link_to 'ddddd' do
                   %i.fa.fa-google-plus.fa-2x
 

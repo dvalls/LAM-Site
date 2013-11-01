@@ -4,28 +4,21 @@
   .form-inputs
     = f.input :title
     = f.input :description
-    = f.input :tag_list, { :placeholder => "Tags separated by commas" }
+    = image_tag @project.cover_image.url
+    = f.input :cover_image, as: :file
+    = f.input :tag_list, { :placeholder => "Tags separadas por vírgula" }
     = f.input :year, as: :date,  discard_day: true, discard_month: true
     %hr
     %ul.list-unstyled
-      - @images.each do |image|
-        %li
-          .row
-            .col-lg-3
-              = image_tag image.url.url(:thumb)
-            .col-lg-9
-              %h3= image.title
-              %p= text_field_tag 'description', image.description
-              %p= text_field_tag 'images', image.url.url
+      = render :partial => 'images/image', :collection => @images, :as => :image
 
-    = link_to 'VER GALERIA', project_images_path(@project)
-    = link_to 'ADICIONAR IMAGENS', new_project_image_path(@project)
+    = link_to 'VER GALERIA', project_images_path(@project), :class => 'btn btn-default'
+    = link_to 'ADICIONAR IMAGENS', new_project_image_path(@project), :class => 'btn btn-default'
 
-    .clearfix
     = f.input :body, as: :text, input_html: {'data-provide' => 'markdown',  :rows => '40'}
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, :class => 'btn btn-primary'
 
 
 = link_to 'Show', @project

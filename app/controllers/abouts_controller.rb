@@ -7,7 +7,6 @@ class AboutsController < ApplicationController
 
 
   def edit
-
   end
 
   def update
@@ -21,6 +20,9 @@ class AboutsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_about
     @about = About.first_or_create!
+
+    # load images
+    @images = @about.images
   end
 
   # Only allow a trusted parameter "white list" through.

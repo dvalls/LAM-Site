@@ -1,0 +1,11 @@
+= simple_form_for(@carousel) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :project_id, collection: @projects
+    = f.input :title
+    = f.input :description
+    = f.input :image_url, as: :file
+
+  .form-actions
+    = f.button :submit

@@ -1,11 +1,14 @@
 LAMSite::Application.routes.draw do
 
-  root "home#index"
+  root 'home#index'
+
+  get 'admin' => 'admin/home#index'
 
   resources :projects
   resources :feeds
   resources :tags
   resources :images
+  resources :carousels
 
   resource :about
   resource :contact
@@ -13,6 +16,11 @@ LAMSite::Application.routes.draw do
   resources :projects do
     resources :images
   end
+
+  resource :about, :contact do
+    resources :images
+  end
+
 
   namespace :admin do
     resources :tags

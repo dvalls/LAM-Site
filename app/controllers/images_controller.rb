@@ -31,18 +31,18 @@ class ImagesController < ApplicationController
 
     end
 
-    redirect_to project_images_path(@imageable), notice: 'Image successfully created.'
+    redirect_to @imageable, notice: 'Image successfully created.'
 
   end
 
   def destroy
     @image.destroy
-    redirect_to project_images_path(@imageable), notice: 'Image was successfully destroyed.'
+    redirect_to @imageable, notice: 'Image was successfully destroyed.'
   end
 
   def update
     if @image.update(image_params)
-      redirect_to project_images_path(@imageable), notice: 'Image was successfully updated.'
+      redirect_to @imageable, notice: 'Image was successfully updated.'
     else
       render action: 'edit'
     end
@@ -63,6 +63,8 @@ class ImagesController < ApplicationController
 
   def set_imageable
     params.each do |name, value|
+
+      # With ID
       if name =~ /(.+)_id$/
         if $1 == 'project'
           @imageable =  $1.classify.constantize.friendly.find(value) # Exclusive loading cause FriendlyId...
@@ -70,6 +72,10 @@ class ImagesController < ApplicationController
           @imageable =  $1.classify.constantize.find(value)
         end
 
+      #For single resource
+      else
+        resource, id = request.path.split('/')[1,2]
+        @imageable = resource.singularize.classify.constantize.first
       end
     end
     nil

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Project:
+  = @carousel.project_id
+%p
+  %b Title:
+  = @carousel.title
+%p
+  %b Description:
+  = @carousel.description
+%p
+  %b Image url:
+  = @carousel.image_url
+
+= link_to 'Edit', edit_carousel_path(@carousel)
+\|
+= link_to 'Back', carousels_path
