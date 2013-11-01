@@ -10,6 +10,4 @@
   %b Image:
   = @feed.image
 
-= link_to 'Edit', edit_feed_path(@feed)
-\|
-= link_to 'Back', feeds_path
+= link_to 'EDITAR', edit_feed_path(@feed), :class => 'btn btn-primary'  if signed_in?

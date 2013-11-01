@@ -1,6 +1,7 @@
 class AboutsController < ApplicationController
 
   before_action :set_about, only: [:show, :edit, :update]
+  before_filter :authorize, :except => [:show]
 
   def show
   end
@@ -11,7 +12,7 @@ class AboutsController < ApplicationController
 
   def update
     if @about.update(about_params)
-      redirect_to { action 'index' }
+      redirect_to about_path, notice: 'Image successfully created.'
     end
   end
 

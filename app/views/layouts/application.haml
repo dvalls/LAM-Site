@@ -31,8 +31,8 @@
             %nav.nav.col-lg-4
               %ul.list-unstyled
                 %li=link_to(t('nav.projects'), projects_path)
-                -#%li=link_to(t('nav.about'), :controller => :abouts, :action => :show)
-                -#%li=link_to(t('nav.contact'), :controller => :contacts, :action => :show)
+                %li=link_to(t('nav.about'), about_path)
+                %li=link_to(t('nav.contact'), contact_path)
 
             .col-lg-8
               = yield :menu

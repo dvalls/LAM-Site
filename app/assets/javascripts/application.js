@@ -6,7 +6,7 @@
 //= require twitter/bootstrap/transition
 //= require twitter/bootstrap/carousel
 //= require twitter/bootstrap/tooltip
-// require twitter/bootstrap/alert
+//= require twitter/bootstrap/alert
 // require twitter/bootstrap/modal
 // require twitter/bootstrap/dropdown
 // require twitter/bootstrap/scrollspy

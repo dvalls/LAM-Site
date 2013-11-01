@@ -1,5 +1,6 @@
 class FeedsController < ApplicationController
   before_action :set_feed, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize, :except => [:index]
 
   # GET /feeds
   def index

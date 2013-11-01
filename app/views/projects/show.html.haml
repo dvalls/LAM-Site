@@ -1,3 +1,5 @@
+= render 'layouts/flash_message'
+
 %p= @project.tag_list
 %h1= @project.title
 %p= @project.description
@@ -6,8 +8,6 @@
 %p= markdown @project.body unless @project.body.nil?
 
 
-= link_to 'Edit', edit_project_path(@project)
-|
-= link_to 'Apagar', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }
-|
-= link_to 'Back', projects_path
+- if signed_in?
+  = link_to 'EDITAR', edit_project_path(@project), :class => 'btn btn-primary'
+  = link_to 'APAGAR', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary'

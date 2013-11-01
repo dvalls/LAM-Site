@@ -1,2 +1,4 @@
+= render :partial => 'layouts/flash_message'
+
 = markdown @about.body unless @about.body.blank?
-= link_to 'editar', action: :edit
+= link_to 'EDITAR', edit_about_path, :class => 'btn btn-primary' if signed_in?

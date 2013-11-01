@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 
   before_action :set_contact_and_load_images, only: [:show, :edit, :update]
+  before_filter :authorize, :except => [:show]
 
   def show
   end
@@ -11,7 +12,7 @@ class ContactsController < ApplicationController
 
   def update
     if @contact.update(contact_params)
-      redirect_to { action 'index' }
+      redirect_to contact_path, notice: 'Image successfully created.'
     end
   end
 

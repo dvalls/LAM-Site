@@ -18,13 +18,7 @@
     = f.input :body, as: :text, input_html: {'data-provide' => 'markdown',  :rows => '40'}
 
   .form-actions
-    = f.button :submit, :class => 'btn btn-primary'
-
-
-= link_to 'Show', @project
-\|
-= link_to 'Back', projects_path
-
+    = f.button :submit, 'ATUALIZAR PROJETO', :class => 'btn btn-primary'
 
 = javascript_include_tag "bootstrap-markdown", "markdown"
 = stylesheet_link_tag "bootstrap-markdown.min"

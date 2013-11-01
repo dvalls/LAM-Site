@@ -2,6 +2,7 @@ class ImagesController < ApplicationController
 
   before_action :set_imageable, only: [:index, :edit,  :create, :new, :update, :destroy]
   before_action :set_image, only: [:edit, :update, :destroy]
+  before_filter :authorize
 
   def index
     @images = @imageable.images
