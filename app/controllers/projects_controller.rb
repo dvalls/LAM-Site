@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   def index
     @projects = Project.all
-    @project_tags = ActsAsTaggableOn::Tag.all
+    @categories = Category.all
   end
 
   # GET /projects/1
@@ -57,6 +57,6 @@ class ProjectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def project_params
-      params.require(:project).permit(:title, :description, :body, :year, :tag_list, :slug, :cover_image)
+      params.require(:project).permit(:title, :description, :body, :year, :tag_list, :slug, :cover_image, :category_ids => [])
     end
 end

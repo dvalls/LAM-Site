@@ -6,7 +6,8 @@
     = f.input :description
     = image_tag @project.cover_image.url
     = f.input :cover_image, as: :file
-    = f.input :tag_list, { :placeholder => "Tags separadas por vírgula" }
+    = f.association :categories, as: :check_boxes
+
     = f.input :year, as: :date,  discard_day: true, discard_month: true
     %hr
     %ul.list-unstyled

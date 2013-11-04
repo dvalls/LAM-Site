@@ -3,14 +3,6 @@
     - @carousels.each_with_index do |carousel, index|
       %li{:class => (index == 0 ? 'active' : ''), "data-target" => "#carousel", "data-slide-to" => "#{index}"}
 
-
-  / Carousel buttons
-  %a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
-    %span.icon-prev
-  %a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
-    %span.icon-next
-  / end Carousel buttons
-
   / Carousel slides
   .carousel-inner
     - @carousels.each_with_index do |carousel, index|
@@ -19,8 +11,14 @@
         .carousel-caption
           %h3= carousel.title
           %p= carousel.description
-  / end carousel slides
 
+  / Carousel buttons
+  %a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
+    %span.icon-prev
+  %a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
+    %span.icon-next
+
+= link_to 'EDITAR GALERIA', carousels_path, :class => 'btn btn-primary' if signed_in?
 / Feeds
 %ul.feeds.list-unstyled
   - @feeds.each do |feed|

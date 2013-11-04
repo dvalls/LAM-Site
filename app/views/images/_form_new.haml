@@ -4,5 +4,8 @@
   .form-inputs
     = f.input :url, as: :file, :input_html => { :multiple => true }
 
+  %p
+    É possível selecionar uma ou mais imagens.
+
   .form-actions
-    = f.button :submit, 'NOVA IMAGEM',  :class => 'btn btn-default'
+    = f.button :submit, 'SALVAR',  :class => 'btn btn-default'

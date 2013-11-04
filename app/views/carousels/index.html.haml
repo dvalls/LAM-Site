@@ -1,5 +1,3 @@
-%h1 Listing carousels
-
 %table
   %tr
     %th Project
@@ -15,11 +13,10 @@
       %td= carousel.project_id
       %td= carousel.title
       %td= carousel.description
-      %td= carousel.image_url
-      %td= link_to 'Show', carousel
+      %td= image_tag carousel.image_url
       %td= link_to 'Edit', edit_carousel_path(carousel)
       %td= link_to 'Destroy', carousel, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Carousel', new_carousel_path
+= link_to 'NOVA IMAGEM CAROUSEL', new_carousel_path, :class => 'btn btn-primary'

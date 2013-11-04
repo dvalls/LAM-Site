@@ -11,6 +11,8 @@ class Project < ActiveRecord::Base
   # Cover image
   mount_uploader :cover_image, CoverImageUploader
 
+  has_and_belongs_to_many :categories
+
   has_many :images, :as => :imageable, :dependent => :destroy
 
 end

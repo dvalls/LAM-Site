@@ -4,19 +4,23 @@
     %ul.list-unstyled#filters.option-set{"data-option-key" => "filter"}
       %li
         %a{"data-option-value" => "*", href: "#filter"}= t 'nav.all_projects'
-      - @project_tags.each do |tag|
+      - @categories.each do |category|
         %li
-          %a{"data-option-value" => ".#{tag}", href: "#filter"}= tag.to_s.upcase
+          %a{"data-option-value" => ".#{category.name}", href: "#filter"}= category.name.upcase
+  = link_to 'EDITAR CATEGORIAS', categories_path, :class => 'btn btn-primary' if signed_in?
+
 
 / Grid Projects
 #grid_projects.row
   - @projects.each do |project|
-    .project.col-lg-4{:class => "#{project.tag_list.join(" ")}" }
+    .project.col-lg-4{:class => "#{categories_helper(project)}"}
       = link_to project do
         .lighter= image_tag project.cover_image.url, :height => 161
         %p
-          = project.tag_list
-          |
+          - project.categories.each do |category|
+            = category.shortname.upcase
+            = '|' unless category == project.categories.last
+
           = project.title
 
 
