@@ -31,7 +31,7 @@ $font-size-base: 10px;
 $link-color: black;
 
 
-.container {background-color: #ffffff; min-height: 100%; height: 100%;}
+.container {background-color: #ffffff; min-height: 100%; height: 100%; -webkit-font-smoothing: antialiased; }
 
 
 //#primaryContainer {

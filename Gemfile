@@ -15,13 +15,9 @@ gem 'redcarpet'
 
 # Upload
 gem 'carrierwave'
+gem 'fog'
 #gem 'rmagick', '=2.13.2.mswin32', :platforms => :mswin
 gem 'mini_magick', :git => 'git://github.com/minimagick/minimagick.git', :ref => '6d0f8f953112cce6324a524d76c7e126ee14f392'
-
-
-# Authentication
-gem 'clearance'
-#gem 'bcrypt-ruby', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 # I18n
 gem 'rails-i18n', '~> 4.0.0'

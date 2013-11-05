@@ -1,5 +1,11 @@
 module ApplicationHelper
 
+
+  def signed_in?
+    not request.authorization.nil?
+  end
+
+
   def markdown(text)
     render_options = {
         # will remove from the output HTML tags inputted by user

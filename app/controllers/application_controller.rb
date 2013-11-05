@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-  include Clearance::Controller
-  # Prevent CSRF attacks by raising an exception.
+   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :set_locale
@@ -12,5 +11,15 @@ class ApplicationController < ActionController::Base
   def default_url_options(options={})
     { locale: I18n.locale }
   end
+
+
+  protected
+
+  def authorize
+    authenticate_or_request_with_http_basic do |username, password|
+      username == USER_ID && password == PASSWORD
+    end
+  end
+
 
 end

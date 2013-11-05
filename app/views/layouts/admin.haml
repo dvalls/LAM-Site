@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title= content_for?(:title) ? yield(:title) : "studioLAM"
+    %title= content_for?(:title) ? yield(:title) : OFFICE_NAME
 
     / SEO
     %meta{ name: 'googlebot', content: 'no index, no follow' }
@@ -20,7 +20,7 @@
 
       / Header
       %header.row
-        =link_to(image_tag('logo_studio_lam.jpg'), root_path)
+        =link_to(image_tag(LOGO_URL), root_path)
       / Row 2 columns
       .row
         / Row 1 - Nav & Footer
