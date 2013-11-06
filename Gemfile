@@ -13,9 +13,14 @@ gem 'simple_form'
 # Markdown
 gem 'redcarpet'
 
+#Configuration
+gem 'figaro'
+
 # Upload
-gem 'carrierwave'
-gem 'fog'
+gem 'carrierwave-aws'
+#gem 'carrierwave'
+#gem 'fog', '~> 1.3.1'
+#gem 'unf'
 #gem 'rmagick', '=2.13.2.mswin32', :platforms => :mswin
 gem 'mini_magick', :git => 'git://github.com/minimagick/minimagick.git', :ref => '6d0f8f953112cce6324a524d76c7e126ee14f392'
 

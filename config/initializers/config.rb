@@ -12,5 +12,5 @@ VIMEO_LINK = ''
 
 
 # Admin
-USER_ID   = 'Sauron'
-PASSWORD  = 's3cr3t'
+USER_ID   = 'lam'
+PASSWORD  = 'lam2013'
