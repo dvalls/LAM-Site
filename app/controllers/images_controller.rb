@@ -43,7 +43,7 @@ class ImagesController < ApplicationController
 
   def update
     if @image.update(image_params)
-      redirect_to @imageable, notice: 'Image was successfully updated.'
+      redirect_to action: 'index', notice: 'Image was successfully updated.'
     else
       render action: 'edit'
     end

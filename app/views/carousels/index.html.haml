@@ -13,7 +13,7 @@
       %td= carousel.project_id
       %td= carousel.title
       %td= carousel.description
-      %td= image_tag carousel.image_url
+      %td= image_tag carousel.image_url.url(:thumb)
       %td= link_to 'EDITAR', edit_carousel_path(carousel)
       %td= link_to 'APAGAR', carousel, :method => :delete, :data => { :confirm => 'Are you sure?' }
 

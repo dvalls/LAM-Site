@@ -9,7 +9,8 @@
       .item{:class => (index == 0 ? 'active' : '')}
         =image_tag carousel.image_url
         .carousel-caption
-          %h3= carousel.title
+          %h3
+            = link_to carousel.title, carousel.project
           %p= carousel.description
 
   / Carousel buttons

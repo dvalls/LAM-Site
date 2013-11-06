@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title= content_for?(:title) ? yield(:title) : OFFICE_NAME
+    %title= content_for?(:title) ? yield(:title) : ENV['OFFICE_NAME']
 
     / SEO
     %meta{name:"description", :content => t('meta.description')}
@@ -20,7 +20,7 @@
 
       / Header
       %header.row
-        =link_to(image_tag(LOGO_URL), root_path)
+        =link_to(image_tag(ENV['LOGO_URL']), root_path)
       / Row 2 columns
       .row
         / Row 1 - Nav & Footer
@@ -46,22 +46,22 @@
           %footer
             %ul.social
               %li{:title => "FB.COM/STUDIOLAM.POA", "data-toggle" => "tooltip"}
-                =link_to FACEBOOK_LINK  do
+                =link_to ENV['FACEBOOK_LINK']  do
                   %i.fa.fa-facebook.fa-2x
               %li{:title => "INSTAGRAM", "data-toggle" => "tooltip"}
-                =link_to INSTAGRAM_LINK do
+                =link_to ENV['INSTAGRAM_LINK'] do
                   %i.fa.fa-instagram.fa-2x
               %li{:title => "PINTEREST", "data-toggle" => "tooltip"}
-                =link_to PINTEREST_LINK do
+                =link_to ENV['PINTEREST_LINK']do
                   %i.fa.fa-pinterest.fa-2x
               %li{:title => "TWITTER", "data-toggle" => "tooltip"}
-                =link_to TWITTER_LINK do
+                =link_to ENV['TWITTER_LINK'] do
                   %i.fa.fa-twitter.fa-2x
               %li{:title => "VIMEO", "data-toggle" => "tooltip"}
-                =link_to VIMEO_LINK do
+                =link_to ENV['VIMEO_LINK'] do
                   %i.fa.fa-vimeo-square.fa-2x
               %li{:title => "GOOGLE+", "data-toggle" => "tooltip"}
-                =link_to GOOGLE_PLUS_LINK do
+                =link_to ENV['GOOGLE_PLUS_LINK'] do
                   %i.fa.fa-google-plus.fa-2x
 
             %p=t 'phone'

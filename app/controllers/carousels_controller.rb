@@ -26,7 +26,7 @@ class CarouselsController < ApplicationController
     @carousel = Carousel.new(carousel_params)
 
     if @carousel.save
-      redirect_to @carousel, notice: 'Carousel was successfully created.'
+      redirect_to action: 'index', notice: 'Carousel was successfully created.'
     else
       render action: 'new'
     end

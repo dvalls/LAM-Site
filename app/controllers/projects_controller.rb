@@ -27,8 +27,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
 
     if @project.save
-      # Add gallery images
-      redirect_to new_project_image_path(@project), notice: 'Project was successfully created.'
+      redirect_to project_images_path(@project), notice: 'Project was successfully created.'
     else
       render action: 'new'
     end
