@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b223ee0b-6d04-4fc0-bdaf-013072d9f162" name="Default" comment="cleaning old files">
+    <list default="true" id="b223ee0b-6d04-4fc0-bdaf-013072d9f162" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LAM Site.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383873938042" ignored="false" />
+    <file path="/Dummy.txt" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383874746861" ignored="false" />
     <file path="/application.html.erb" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1381864177784" ignored="false" />
     <file path="/Gemfile" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1382789813599" ignored="false" />
     <file path="/application.html.haml" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1382036282318" ignored="false" />
@@ -37,6 +36,7 @@
     <file path="/projects_helper.rb" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383408180934" ignored="false" />
     <file path="/_form.html.haml" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383408724543" ignored="false" />
     <file path="/projects.css.scss" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383411034964" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b223ee0b-6d04-4fc0-bdaf-013072d9f162" time="1383874939027" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="2" selection-start="560" selection-end="560" vertical-scroll-proportion="0.70212764">
+            <state line="23" column="2" selection-start="561" selection-end="561" vertical-scroll-proportion="0.7309322">
               <folding />
             </state>
           </provider>
@@ -735,7 +735,15 @@
       <created>1383873574259</created>
       <updated>1383873574259</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleaning old files">
+      <created>1383874591311</created>
+      <updated>1383874591311</updated>
+    </task>
+    <task id="LOCAL-00009" summary="cleaning old files">
+      <created>1383874931771</created>
+      <updated>1383874931771</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -763,16 +771,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4002574" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32689834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32689834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6846847" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30846485" sideWeight="0.6705277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30846485" sideWeight="0.67310166" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989704" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31513646" sideWeight="0.49713057" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3153153" sideWeight="0.5028694" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947233" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -907,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="2" selection-start="560" selection-end="560" vertical-scroll-proportion="0.70212764">
+        <state line="23" column="2" selection-start="561" selection-end="561" vertical-scroll-proportion="0.7309322">
           <folding />
         </state>
       </provider>
