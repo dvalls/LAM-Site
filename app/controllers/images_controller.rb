@@ -32,18 +32,18 @@ class ImagesController < ApplicationController
 
     end
 
-    redirect_to @imageable, notice: 'Image successfully created.'
+    redirect_to edit_polymorphic_path([@image.imageable]), notice: 'Image successfully created.'
 
   end
 
   def destroy
     @image.destroy
-    redirect_to @imageable, notice: 'Image was successfully destroyed.'
+    redirect_to :back, notice: 'Image was successfully destroyed.'
   end
 
   def update
     if @image.update(image_params)
-      redirect_to action: 'index', notice: 'Image was successfully updated.'
+      redirect_to edit_polymorphic_path([@image.imageable]), :action => :edit, notice: 'Image was successfully updated.'
     else
       render action: 'edit'
     end
@@ -76,7 +76,7 @@ class ImagesController < ApplicationController
       #For single resource
       else
         resource, id = request.path.split('/')[1,2]
-        @imageable = resource.singularize.classify.constantize.first
+        @imageable = resource.classify.constantize.first
       end
     end
     nil

@@ -12,7 +12,7 @@ class AboutsController < ApplicationController
 
   def update
     if @about.update(about_params)
-      redirect_to about_path, notice: 'Image successfully created.'
+      redirect_to about_path, notice: 'Imagem criada com sucesso.'
     end
   end
 

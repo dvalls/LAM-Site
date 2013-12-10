@@ -1,6 +1,5 @@
 LAMSite::Application.routes.draw do
 
-
   root 'home#index'
 
   get 'admin' => 'admin/home#index'

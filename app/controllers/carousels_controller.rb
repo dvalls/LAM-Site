@@ -6,9 +6,6 @@ class CarouselsController < ApplicationController
     @carousels = Carousel.all
   end
 
-  # GET /carousels/1
-  def show
-  end
 
   # GET /carousels/new
   def new
@@ -35,7 +32,7 @@ class CarouselsController < ApplicationController
   # PATCH/PUT /carousels/1
   def update
     if @carousel.update(carousel_params)
-      redirect_to @carousel, notice: 'Carousel was successfully updated.'
+      redirect_to action: 'index', notice: 'Carousel was successfully updated.'
     else
       render action: 'edit'
     end

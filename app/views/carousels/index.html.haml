@@ -1,22 +1,22 @@
-%table
+%table.table
   %tr
-    %th Project
-    %th Title
-    %th Description
-    %th Image url
-    %th
-    %th
+    %th Projeto
+    %th Título
+    %th Descrição
+    %th Imagem
     %th
 
   - @carousels.each do |carousel|
     %tr
-      %td= carousel.project_id
+      %td= carousel.project.title
       %td= carousel.title
       %td= carousel.description
       %td= image_tag carousel.image_url.url(:thumb)
-      %td= link_to 'EDITAR', edit_carousel_path(carousel)
-      %td= link_to 'APAGAR', carousel, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td
+        = link_to 'EDITAR', edit_carousel_path(carousel)
+        |
+        = link_to 'APAGAR', carousel, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'NOVA IMAGEM CAROUSEL', new_carousel_path, :class => 'btn btn-primary'
+= link_to 'NOVA IMAGEM', new_carousel_path, :class => 'btn btn-primary'

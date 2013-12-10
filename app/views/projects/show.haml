@@ -1,0 +1,16 @@
+- if signed_in?
+  %p.pull-right
+    = link_to 'EDITAR', edit_project_path(@project), :class => 'btn btn-primary'
+    = link_to 'APAGAR', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary'
+
+= render 'layouts/flash_message'
+
+%p= markdown @project.body unless @project.body.nil?
+
+%hr
+%h3 Memória Projeto
+%p= @project.title
+%p= @project.description
+%p= @project.year
+
+%i.fa.fa-chevron-up

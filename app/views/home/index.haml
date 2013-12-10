@@ -8,16 +8,17 @@
     - @carousels.each_with_index do |carousel, index|
       .item{:class => (index == 0 ? 'active' : '')}
         =image_tag carousel.image_url
-        .carousel-caption
-          %h3
-            = link_to carousel.title, carousel.project
-          %p= carousel.description
+        - unless carousel.title.empty?
+          = link_to carousel.project do
+            .carousel-caption
+              = carousel.title
+              %p.text-muted= carousel.description
 
-  / Carousel buttons
-  %a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
-    %span.icon-prev
-  %a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
-    %span.icon-next
+  -#/ Carousel buttons
+  -#%a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
+  -#  %span.icon-prev
+  -#%a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
+  -#  %span.icon-next
 
 = link_to 'EDITAR GALERIA', carousels_path, :class => 'btn btn-primary' if signed_in?
 / Feeds
@@ -25,7 +26,7 @@
   - @feeds.each do |feed|
     %li
       %h4= feed.title
-      =image_tag feed.image unless feed.image.blank?
+      = image_tag feed.image unless feed.image.blank?
       %p= markdown(feed.body)
       %p=l feed.updated_at.to_date, format: :default
 
