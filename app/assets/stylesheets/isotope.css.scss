@@ -25,16 +25,12 @@
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
   transition-property: height, width;
 }
 
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property:    -moz-transform, opacity;
-  -ms-transition-property:     -ms-transform, opacity;
-  -o-transition-property:      -o-transform, opacity;
   transition-property:         transform, opacity;
 }
 
@@ -51,7 +47,6 @@
 }
 
 /* End: Recommended Isotope styles */
-
 
 
 /* disable CSS transitions for containers with infinite scrolling*/

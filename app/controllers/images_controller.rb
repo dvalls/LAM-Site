@@ -32,18 +32,18 @@ class ImagesController < ApplicationController
 
     end
 
-    redirect_to edit_polymorphic_path([@image.imageable]), notice: 'Image successfully created.'
+    redirect_to edit_polymorphic_path([@image.imageable]), notice: t('views.image.create')
 
   end
 
   def destroy
     @image.destroy
-    redirect_to :back, notice: 'Image was successfully destroyed.'
+    redirect_to :back, notice: t('views.image.destroy')
   end
 
   def update
     if @image.update(image_params)
-      redirect_to edit_polymorphic_path([@image.imageable]), :action => :edit, notice: 'Image was successfully updated.'
+      redirect_to edit_polymorphic_path([@image.imageable]), :action => :edit, notice: t('views.updated_ok')
     else
       render action: 'edit'
     end
@@ -51,7 +51,6 @@ class ImagesController < ApplicationController
 
 
   private
-
 
   ## Only allow a trusted parameter "white list" through.
   def image_params

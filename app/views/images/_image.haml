@@ -5,7 +5,7 @@
     .col-lg-9
       = text_area_tag 'Markdown', "<img src='#{image.url.url}' height='#{image.height}' width='#{image.width}' alt='#{image.title}'/>", :rows => '4', :class => 'form-control'
       %br
-        = link_to 'APAGAR', image_path(image), :method => :delete, :data => { :confirm => 'Are you sure?' }
+        = link_to 'APAGAR', image_path(image), :method => :delete, :data => { :confirm => t('views.are_you_sure') }
         |
         = link_to 'ADICIONAR INFO', edit_image_path(image)
         |

@@ -1,0 +1,38 @@
+// Carousel
+#carousel {height:412px; max-height:412px; background-color: gray}
+#carousel .item > img {
+  height: 412px;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  text-align: left;
+  padding: 10px;
+  bottom: 0;
+  width: 250px;
+}
+
+.carousel-caption a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.carousel-indicators {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 20px;
+  margin-left: 10px;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.carousel-indicators li { opacity: .5;}
+
+p#all_news {margin: 30px 0 0 0 }
+

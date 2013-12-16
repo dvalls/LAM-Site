@@ -4,6 +4,7 @@
 
 /*LIGHTER*/
 .lighter img {
+  height: 170px;
   -webkit-filter: grayscale(.6) ;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -16,4 +17,9 @@
   -webkit-filter: grayscale(0) ;
 }
 
-.project a {text-decoration: none}
+
+.project {height: 190px; width: 275px}
+.project_name {line-height: 15px; margin-bottom: 5px}
+.project a {text-decoration: none;}
+
+.close_project {z-index: 1; position: absolute; right: 0; font-size: 10px}

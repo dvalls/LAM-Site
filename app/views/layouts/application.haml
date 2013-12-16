@@ -10,17 +10,18 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    %link{href: "http://fonts.googleapis.com/css?family=Roboto:300", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Roboto:300|Ubuntu+Mono|Rokkitt:700", rel: "stylesheet", type: "text/css"}
     %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css", rel: "stylesheet"}
 
     = csrf_meta_tags
 
   %body
-    .container
+    #anchor_top.container
 
       / Header
       %header.row
         =link_to(image_tag(ENV['LOGO_URL']), root_path)
+        = render :partial => 'layouts/flash_message'
       / Row 2 columns
       .row
         / Row 1 - Nav & Footer
@@ -64,11 +65,15 @@
                 =link_to ENV['GOOGLE_PLUS_LINK'] do
                   %i.fa.fa-google-plus.fa-2x
 
-            %p=t 'phone'
-            %p=t 'email'
+            %p#telephone=t 'phone'
+            %p#email=t 'email'
             %address=t('address')
-            =t 'copyright'
+            = Time.now.year.to_s + t('copyright')
 
         / Row 2 - Main content
         %main.col-lg-9.col-md-9.col-sm-9.equalize
           = yield
+
+          %p#link_anchor
+            = link_to '#anchor_top' do
+              %i.fa.fa-chevron-up

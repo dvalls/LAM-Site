@@ -1,5 +1,6 @@
 module ProjectsHelper
 
+  # Function for output categories for isotope filtering
   def categories_helper(project)
 
     @output = ''
@@ -10,4 +11,5 @@ module ProjectsHelper
 
     return @output
   end
+
 end

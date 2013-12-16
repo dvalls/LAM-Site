@@ -14,12 +14,6 @@
               = carousel.title
               %p.text-muted= carousel.description
 
-  -#/ Carousel buttons
-  -#%a.left.carousel-control{"data-slide" => "prev", href: "#carousel"}
-  -#  %span.icon-prev
-  -#%a.right.carousel-control{"data-slide" => "next", href: "#carousel"}
-  -#  %span.icon-next
-
 = link_to 'EDITAR GALERIA', carousels_path, :class => 'btn btn-primary' if signed_in?
 / Feeds
 %ul.feeds.list-unstyled
@@ -30,6 +24,6 @@
       %p= markdown(feed.body)
       %p=l feed.updated_at.to_date, format: :default
 
-%p=link_to 'mais notícias', feeds_path
+%p#all_news=link_to t('views.all_news'), feeds_path
 
-%i.fa.fa-chevron-up
+= stylesheet_link_tag "home"

@@ -17,15 +17,20 @@
 $body-bg: #EBEBEB;
 
 // Grid
-//$container-lg-desktop: 1200px;
-//$grid-columns: 12;
-//$gridColumnWidth: 100px;
 $grid-gutter-width:0;
 
 
 // Typography
-$font-family-base: 'Roboto', helvetica, arial;
+$font-family-base: 'Roboto', helvetica, arial, sans-serif;
 $font-size-base: 10px;
+
+$headings-font-family: 'Rokkitt';
+$font-size-h1: $font-size-base * 5;
+$font-size-h2: $font-size-base * 4;
+$font-size-h3: $font-size-base * 3;
+$font-size-h4: $font-size-base * 2;
+$font-size-h5: $font-size-base * 1.5;
+
 
 // Color
 $link-color: black;
@@ -37,65 +42,18 @@ $carousel-indicator-active-bg: black;
 
 .container {background-color: #ffffff; min-height: 100%; height: 100%; -webkit-font-smoothing: antialiased; }
 
+header {margin-bottom: 50px; }
 
-
-header {
-    //float: left;
-    //clear: none;
-    //width: 100%;
-    //padding: 50px;
-  margin-bottom: 50px;
-}
-
-aside {
-
-
-  //background-color: deepskyblue;
-  //min-height: 900px;
-  //height: auto !important;
-  //top: 0px;
-  //bottom: 0px;
-  //height: 800px;
-  //overflow: hidden;
-  //margin: 0 auto -50px; /* same as the footer */
-  //position: relative;
-}
-//
-.two-columns {
-  //position: relative;
-  //background-color: aqua;
-  //height: 100%;
-  //padding-left: 50px;
-  //margin:0 auto
-  //float: left;
-  //clear: both;
-  //width: 189px;
-  min-height: 800px;
-
-}
+.two-columns {min-height: 800px;}
 
 .nav li {margin-bottom: 10px}
 
-//
-main {
-//  position: relative;
-  //padding-right: 50px;
-//  float: left;
-//  width: 889px;
-//  margin: 0 0 0 2%;
-  height: auto !important;
-//}
-}
+main {height: auto !important}
 
-
-footer {
-  //background-color: burlywood;
-  position:absolute;
-  bottom: 0;
-}
 
 #i18n {margin-top: 400px}
 
+footer {position:absolute; bottom: 0;}
 address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bottom: 30px}
 
 ul.social li {display: inline; padding: 5px; }
@@ -103,16 +61,13 @@ ul.social li a {text-decoration: none; height: 15px }
 ul.social {margin-bottom: 25px; padding-left: 0}
 
 ul.feeds li {margin-top: 30px}
+.markdown {font-family: 'Ubuntu Mono', 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px}
+.alert {width: 825px;}
+p#link_anchor {margin: 50px 0 0 0}
 
-#carousel {height:412px; max-height:412px; background-color: gray}
-#carousel .item > img {
-  height: 412px;
-  width: 100%;
-}
 
 // import original bootstrap
 @import "twitter/bootstrap";
-
 
 //
 //
@@ -126,37 +81,4 @@ ul.feeds li {margin-top: 30px}
     width: 1200px;
     padding: 50px;
   }}
-
-
-// Carousel
-  .carousel-caption {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    left: 0;
-    text-align: left;
-    padding: 10px;
-    bottom: 0;
-    width: 250px;
-  }
-
-  .carousel-caption a{
-    color: white;
-    text-decoration: none;
-  }
-
-
-  .carousel-indicators {
-    position: absolute;
-    left: 0;
-    top: 10px;
-    height: 20px;
-    margin-left: 10px;
-    padding-left: 0;
-    list-style: none;
-    text-align: left;
-  }
-
-  .carousel-indicators li {
-    opacity: .5;
-  }
 

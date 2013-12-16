@@ -19,6 +19,31 @@ en:
     CEP 90220-011
 
 
-  copyright: 2013 -  ALL RIGHTS RESERVED
+  copyright: ' - ALL RIGHTS RESERVED'
+
+
+  # System messages
+  views:
+    updated_ok: Informações atualizadas com sucesso.
+    are_you_sure: Você tem certeza?
+    all_news: ALL NEWS...
+
+    image:
+      create: Imagem(ns) criada(s) com sucesso.
+      destroy: Imagem excluída com sucesso.
+
+    project:
+      create: Projeto criado com sucesso.
+      destroy: Projeto excluído com sucesso.
+
+    category:
+      create: Categoria criada com sucesso.
+      destroy: Categoria excluída com sucesso.
+      updated: Categoria atualizada com sucesso.
+
+    feed:
+      create: Notícia criada com sucesso.
+      destroy: Notícia excluída com sucesso.
+      updated: Notícia atualizada com sucesso.
 
 

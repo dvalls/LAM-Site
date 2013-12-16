@@ -2,48 +2,48 @@ class FeedsController < ApplicationController
   before_action :set_feed, only: [:show, :edit, :update, :destroy]
   before_filter :authorize, :except => [:index]
 
-  # GET /feeds
+
   def index
     @feeds = Feed.all
   end
 
-  # GET /feeds/1
+
   def show
   end
 
-  # GET /feeds/new
+
   def new
     @feed = Feed.new
   end
 
-  # GET /feeds/1/edit
+
   def edit
   end
 
-  # POST /feeds
+
   def create
     @feed = Feed.new(feed_params)
 
     if @feed.save
-      redirect_to @feed, notice: 'Feed was successfully created.'
+      redirect_to @feed, notice: t('views.feed.create')
     else
       render action: 'new'
     end
   end
 
-  # PATCH/PUT /feeds/1
+
   def update
     if @feed.update(feed_params)
-      redirect_to @feed, notice: 'Feed was successfully updated.'
+      redirect_to @feed, notice: t('views.feed.updated')
     else
       render action: 'edit'
     end
   end
 
-  # DELETE /feeds/1
+
   def destroy
     @feed.destroy
-    redirect_to feeds_url, notice: 'Feed was successfully destroyed.'
+    redirect_to feeds_url, notice: t('views.feed.destroy')
   end
 
   private

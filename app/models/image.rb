@@ -7,6 +7,7 @@ class Image < ActiveRecord::Base
 
   mount_uploader :url, ImageUploader
 
+  # Store Height & Width on DB
   def update_image_attributes
     if imageable.present?
       self.width, self.height = `identify -format "%wx%h" #{url.file.path}`.split(/x/)

@@ -7,6 +7,7 @@
       - @categories.each do |category|
         %li
           %a{"data-option-value" => ".#{category.name}", href: "#filter"}= category.name.upcase
+
   = link_to 'EDITAR CATEGORIAS', categories_path, :class => 'btn btn-primary' if signed_in?
 
 
@@ -15,13 +16,13 @@
   - @projects.each do |project|
     .project.col-lg-4{:class => "#{categories_helper(project)}"}
       = link_to project do
-        .lighter= image_tag project.cover_image.url, :height => 161
-        %p
+        .lighter= image_tag project.cover_image.url, :height => '170'
+        .project_name
           - project.categories.each do |category|
             = category.shortname.upcase
             = '|' unless category == project.categories.last
 
-          = project.title
+          = '- ' + project.title
 
 
 / Isotope scripts

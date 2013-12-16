@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
 
   def update
     if @contact.update(contact_params)
-      redirect_to contact_path, notice: 'Image successfully created.'
+      redirect_to contact_path, notice: t('views.updated_ok')
     end
   end
 

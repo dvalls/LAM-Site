@@ -1,16 +1,25 @@
-- if signed_in?
-  %p.pull-right
-    = link_to 'EDITAR', edit_project_path(@project), :class => 'btn btn-primary'
-    = link_to 'APAGAR', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary'
+= link_to projects_path, :class => 'close close_project' do
+  FECHAR
+  %i.fa.fa-times
 
-= render 'layouts/flash_message'
+%p= @project.title
+%hr
 
-%p= markdown @project.body unless @project.body.nil?
+.markdown= markdown @project.body unless @project.body.nil?
 
 %hr
-%h3 Memória Projeto
+%h4 Memória Projeto
 %p= @project.title
 %p= @project.description
 %p= @project.year
 
-%i.fa.fa-chevron-up
+= stylesheet_link_tag "projects"
+
+- if signed_in?
+  %p
+    = link_to 'EDITAR', edit_project_path(@project), :class => 'btn btn-primary'
+    = link_to 'APAGAR', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary'
+
+
+
+

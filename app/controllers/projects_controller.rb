@@ -2,50 +2,50 @@ class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
   before_filter :authorize, :except => [:index, :show]
 
-  # GET /projects
+
   def index
     @projects = Project.all
     @categories = Category.all
   end
 
-  # GET /projects/1
+
   def show
   end
 
-  # GET /projects/new
+
   def new
     @project = Project.new
   end
 
-  # GET /projects/1/edit
+
   def edit
     @images = @project.images
   end
 
-  # POST /projects
+
   def create
     @project = Project.new(project_params)
 
     if @project.save
-      redirect_to project_images_path(@project), notice: 'Project was successfully created.'
+      redirect_to project_images_path(@project), notice: t('views.project.create')
     else
       render action: 'new'
     end
   end
 
-  # PATCH/PUT /projects/1
+
   def update
     if @project.update(project_params)
-      redirect_to @project, notice: 'Project was successfully updated.'
+      redirect_to @project, notice: t('views.updated_ok')
     else
       render action: 'edit'
     end
   end
 
-  # DELETE /projects/1
+
   def destroy
     @project.destroy
-    redirect_to projects_url, notice: 'Project was successfully destroyed.'
+    redirect_to projects_url, notice: t('views.project.destroy')
   end
 
   private
