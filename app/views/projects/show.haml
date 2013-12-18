@@ -1,19 +1,46 @@
-= link_to projects_path, :class => 'close close_project' do
-  FECHAR
-  %i.fa.fa-times
+- content_for :menu do
+  / Facebook meta-tags
+  %meta{content: "#{@project.cover_image}", property: "og:image"}
+  %meta{content: "#{@project.title}", property: "og:title"}
+  %meta{content: "#{@project.description}", property: "og:description"}
+  %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:site_name"}
 
-%p= @project.title
-%hr
 
+.close_project
+  = link_to projects_path, :class => 'icon-margin' do
+    =t('views.close')
+    %i.fa.fa-times
+
+/ Project Body
 .markdown= markdown @project.body unless @project.body.nil?
 
-%hr
-%h4 Memória Projeto
-%p= @project.title
-%p= @project.description
-%p= @project.year
+
+- content_for :footer do
+  / Social Links
+  #social_links
+    .btn-group.dropup
+      %button.btn.btn-default.dropdown-toggle.icon-margin{"data-toggle" => "dropdown", type: "button"}
+        =t('views.share')
+        %i.fa.fa-share
+      %ul.dropdown-menu
+        %li
+          .fb-like{"data-action" => "like", "data-href" => "#{request.original_url}", "data-layout" => "button_count", "data-share" => "true", "data-show-faces" => "true"}
+        %li
+          .g-plusone{"data-size" => "medium"}
+        %li
+          %a.twitter-share-button{href: "#{request.original_url}"} Tweet
+
+    .btn-group.dropup
+      %a.btn.btn-default.dropdown-toggle.icon-margin{"data-toggle" => "dropdown", type: "button"}
+        =t('views.like_us')
+        %i.fa.fa-heart
+      %ul.dropdown-menu
+        %li
+          .fb-like-box{"data-colorscheme" => "light", "data-header" => "false", "data-href" => "#{ENV['FACEBOOK_LINK']}", "data-show-border" => "false", "data-stream" => "false"}
+
 
 = stylesheet_link_tag "projects"
+= javascript_include_tag "jquery.lazyload.min", "projects"
 
 - if signed_in?
   %p

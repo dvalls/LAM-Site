@@ -28,9 +28,15 @@ pt-BR:
 
   # System messages
   views:
+    all_news: TODAS AS NOTÍCIAS
+    share: COMPARTILHAR
+    close: FECHAR
+    like_us: CURTA NOSSA PÁGINA
+
+
     updated_ok: Informações atualizadas com sucesso.
     are_you_sure: Você tem certeza?
-    all_news: TODAS AS NOTÍCIAS...
+
 
     image:
       create: Imagem(ns) criada(s) com sucesso.

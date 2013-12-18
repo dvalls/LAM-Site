@@ -24,6 +24,9 @@
       %p= markdown(feed.body)
       %p=l feed.updated_at.to_date, format: :default
 
-%p#all_news=link_to t('views.all_news'), feeds_path
+- content_for :footer do
+  -link_to feeds_path, :class => 'btn btn-default icon-margin' do
+    =t('views.all_news')
+    %i.fa.fa-file-o
 
 = stylesheet_link_tag "home"

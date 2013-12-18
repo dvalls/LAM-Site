@@ -24,9 +24,14 @@ en:
 
   # System messages
   views:
+    all_news: ALL NEWS
+    share: SHARE
+    close: CLOSE
+    like_us: LIKE US ON OUR FAN PAGE
+
+
     updated_ok: Informações atualizadas com sucesso.
     are_you_sure: Você tem certeza?
-    all_news: ALL NEWS...
 
     image:
       create: Imagem(ns) criada(s) com sucesso.
