@@ -23,12 +23,8 @@ gem 'mini_magick', :git => 'git://github.com/minimagick/minimagick.git', :ref =>
 gem 'rails-i18n', '~> 4.0.0'
 gem 'globalize', '~> 4.0.0.alpha.2'
 
-# Tags
-gem 'acts-as-taggable-on'
-
 # Friendly URL's
 gem 'friendly_id', '~> 5.0.0'
-
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
