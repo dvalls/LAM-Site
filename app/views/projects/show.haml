@@ -5,12 +5,6 @@
   %meta{content: "#{@project.description}", property: "og:description"}
   %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:site_name"}
 
-
-.close_project
-  = link_to projects_path, :class => 'icon-margin' do
-    =t('views.close')
-    %i.fa.fa-times
-
 / Project Body
 .markdown= markdown @project.body unless @project.body.nil?
 

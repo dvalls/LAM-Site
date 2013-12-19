@@ -25,8 +25,16 @@
 
       / Header
       %header.row
+
+        #i18n
+          = link_to 'PT-BR', :locale=>'pt-BR'
+          |
+          = link_to 'ENG', :locale=>'en'
+
         =link_to(image_tag(ENV['LOGO_URL']), root_path)
+
         = render :partial => 'layouts/flash_message'
+
       / Row 2 columns
       .row
         / Row 1 - Nav & Footer
@@ -42,11 +50,6 @@
 
             .col-lg-8
               = yield :menu
-
-            #i18n
-              = link_to 'PT-BR', :locale=>'pt-BR'
-              |
-              = link_to 'ENG', :locale=>'en'
 
         / Row 2 - Main content
         %main.col-lg-9.col-md-9.col-sm-9
