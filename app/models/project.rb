@@ -2,9 +2,6 @@ class Project < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  # tags
-  acts_as_taggable
-
   # i18n
   translates :title, :description, :body
 
