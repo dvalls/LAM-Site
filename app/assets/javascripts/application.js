@@ -16,23 +16,25 @@
 // require twitter/bootstrap/collapse
 // require twitter/bootstrap/affix
 
-//= require social-medias.js
+//= require social-media-facebook.js
 
 // require_tree .
 
 
+// Change cursor on Turbolinks on DOM transitions
+document.addEventListener("page:fetch", $('selector').css( 'cursor', 'progress' ));
+document.addEventListener("page:receive", $('selector').css( 'cursor', 'default' ));
 
-$(function (){reload();});
-document.addEventListener("page:change", reload());
 
+// Cleanup + enable Bootstrap tooltips on jQuery's ready event as well as
+// Turbolinks's page change event.
+$(document).on("ready page:change", function() {
 
-function reload() {
-
-    // Carousel settings
     $('.carousel').carousel('cycle').carousel({
         interval: 2000});
 
-    // Tooltips
-    $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
-}
+    $("[data-toggle='tooltip']")
+        .tooltip("destroy")
+        .tooltip();
+});
 
