@@ -8,6 +8,8 @@
     %meta{name:"keywords", :content => t('meta.keywords')}
     %meta{name:"revisit-after", :content => "15 Days"}
 
+    %meta{content: "#{ENV['LOGO_URL']}", property: "og:image"}
+
     = yield :head
 
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
