@@ -42,13 +42,13 @@
 
           / Nav
           .row.two-columns
-            %nav.nav.col-lg-4
+            %nav.nav.col-lg-4.col-sm-4
               %ul.list-unstyled
                 %li=link_to(t('nav.projects'), projects_path)
                 %li=link_to(t('nav.about'), about_path)
                 %li=link_to(t('nav.contact'), contact_path)
 
-            .col-lg-8
+            .col-lg-8.col-sm-8
               = yield :menu
 
         / Row 2 - Main content
