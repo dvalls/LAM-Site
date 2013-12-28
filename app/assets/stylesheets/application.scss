@@ -46,15 +46,16 @@ $carousel-indicator-active-bg: black;
 
 .container {background-color: #ffffff; min-height: 100%; height: 100%; -webkit-font-smoothing: antialiased; }
 
+// Header
 header {margin-bottom: 50px; }
+#i18n {float: right; color: lightgray}
+#i18n a {color: lightgray}
 
 .two-columns {min-height: 800px;}
 
-.nav li {margin-bottom: 10px}
-
-
-#i18n {float: right; color: lightgray}
-#i18n a {color: lightgray}
+// Nav
+.nav li {margin-bottom: 10px;}
+.nav a:hover {text-decoration: none}
 
 
 // Footer items
@@ -72,7 +73,7 @@ ul.feeds li {margin-top: 30px}
 .markdown {font-family: 'Ubuntu Mono', 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px}
 
 // System helper
-.alert {width: 825px;}
+.alert {width: 825px; margin-top: 30px}
 
 
 // import original bootstrap

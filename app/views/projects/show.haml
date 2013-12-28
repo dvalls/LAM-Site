@@ -1,4 +1,4 @@
-- content_for :menu do
+- content_for :head do
   / Facebook meta-tags
   %meta{content: "#{@project.cover_image}", property: "og:image"}
   %meta{content: "#{@project.title}", property: "og:title"}
@@ -23,6 +23,7 @@
           .g-plusone{"data-size" => "medium"}
         %li
           %a.twitter-share-button{href: "#{request.original_url}"} Tweet
+          %script{src: "//platform.twitter.com/widgets.js"}
 
     .btn-group.dropup
       %a.btn.btn-default.dropdown-toggle.icon-margin{"data-toggle" => "dropdown", type: "button"}
@@ -34,7 +35,7 @@
 
 
 = stylesheet_link_tag "projects"
-= javascript_include_tag "jquery.lazyload.min", "projects"
+= javascript_include_tag "jquery.lazyload.min", "projects", "social-media-google-plus"
 
 - if signed_in?
   %p

@@ -1,7 +1,9 @@
 en:
-
   meta:
-    description: Site do Studio LAM
+    description: |
+        LAM é um escritório de projeto com base em Porto Alegre, sul do Brasil.
+        Desenvolvemos projetos em diferentes escalas e usos, com uma linha de abordagem transversal que abrange as áreas de arquitetura, engenharia e software.
+
     keywords: Architecture, ...
 
   nav:

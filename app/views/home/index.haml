@@ -1,3 +1,9 @@
+- content_for :head do
+  %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:title"}
+  %meta{content: "#{ENV['LOGO_URL']}", property: "og:image"}
+  %meta{content: "#{t('meta.description')}", property: "og:description"}
+
+
 #carousel.carousel.slide
   %ol.carousel-indicators
     - @carousels.each_with_index do |carousel, index|
