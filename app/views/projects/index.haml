@@ -16,7 +16,7 @@
   - @projects.each do |project|
     .project.col-lg-4{:class => "#{categories_helper(project)}"}
       = link_to project do
-        .lighter= image_tag project.cover_image.url, :height => '170'
+        .lighter= image_tag project.cover_image.url, :height => '170', :class => 'img-responsive'
         .project_name
           - project.categories.each do |category|
             = category.shortname.upcase

@@ -40,21 +40,21 @@
       / Row 2 columns
       .row
         / Row 1 - Nav & Footer
-        %aside.col-lg-3.col-md-3.col-sm-3
+        %aside.col-lg-3.col-md-3.col-sm-4
 
           / Nav
           .row.two-columns
-            %nav.nav.col-lg-4.col-sm-4
+            %nav.nav.col-lg-5.col-sm-5
               %ul.list-unstyled
                 %li=link_to(t('nav.projects'), projects_path)
                 %li=link_to(t('nav.about'), about_path)
                 %li=link_to(t('nav.contact'), contact_path)
 
-            .col-lg-8.col-sm-8
+            .col-lg-7.col-md-5.col-sm-5
               = yield :menu
 
         / Row 2 - Main content
-        %main.col-lg-9.col-md-9.col-sm-9
+        %main.col-lg-9.col-md-9.col-sm-8
 
           / Main
           = yield
@@ -62,7 +62,7 @@
       / Footer
       %footer.row
 
-        .col-lg-3.col-md-3.col-sm-3
+        .col-lg-3.col-md-3.col-sm-4
           %ul.social
             %li{:title => "FB.COM/STUDIOLAM.POA", "data-toggle" => "tooltip"}
               =link_to ENV['FACEBOOK_LINK']  do
@@ -88,7 +88,7 @@
           %address=t('address')
           = Time.now.year.to_s + t('copyright')
 
-        .col-lg-9.col-md-9.col-sm-9#main_footer
+        .col-lg-9.col-md-9.col-sm-8#main_footer
 
           = yield :footer
 

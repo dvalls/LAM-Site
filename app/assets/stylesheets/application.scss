@@ -48,14 +48,18 @@ $carousel-indicator-active-bg: black;
 
 // Header
 header {margin-bottom: 50px; }
-#i18n {float: right; color: lightgray}
-#i18n a {color: lightgray}
+#i18n {
+  float: right; color: lightgray;
+  a {color: lightgray}
+}
 
-.two-columns {min-height: 800px;}
+
 
 // Nav
-.nav li {margin-bottom: 10px;}
-.nav a:hover {text-decoration: none}
+.nav {
+  li {margin-bottom: 10px;}
+  a:hover {text-decoration: none}
+}
 
 
 // Footer items
@@ -63,9 +67,11 @@ footer {margin-top: 50px;}
 #main_footer {height: 185px;}
 p#link_anchor {bottom: 0; position: absolute; height: 5px}
 address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bottom: 30px; margin-top: 20px}
-ul.social li {display: inline; padding: 5px; }
-ul.social li a {text-decoration: none; height: 15px }
-ul.social {margin-bottom: 25px; padding-left: 0}
+ul.social {
+  margin-bottom: 25px; padding-left: 0;
+  li {display: inline; padding: 5px; }
+  a {text-decoration: none; height: 15px }
+}
 .icon-margin i {margin-left: 5px;}
 
 // Main items
@@ -87,13 +93,25 @@ ul.feeds li {margin-top: 30px}
 
 .btn-default:hover {background-color: #ebebeb; border-color: white}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding: 50px;
-  }}
+@mixin min-height-two-columns {.two-columns {min-height: 800px;}}
 
-@media (min-width: 768px) {
-  .container {
-    padding: 50px;
-  }}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .container {padding: 50px;}
+  .two-columns {min-height: 550px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .container {padding: 50px;}
+  .two-columns {min-height: 450px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .container {padding: 50px; width: 1200px;}
+  @include min-height-two-columns;
+}
+
+
+
