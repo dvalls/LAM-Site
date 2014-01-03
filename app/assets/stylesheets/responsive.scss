@@ -6,12 +6,26 @@
   height: ($size / 3) * 2;
 }
 
+
+/* Smartphones */
+@media (max-width: $screen-sm-min) {
+  .container {padding: 10px;}
+  header {margin-bottom: 20px}
+  ul li,ul.nav li {display: inline; margin-left: 5px}
+  #main_footer {height: 50px}
+}
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+
+  // Main
   .container {padding: 50px;}
   .two-columns {min-height: 550px;}
 
+  // Projects
   .lighter img {@include project(190px)}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
