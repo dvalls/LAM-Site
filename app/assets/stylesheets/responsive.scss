@@ -8,11 +8,11 @@
 
 
 /* Smartphones */
-@media (max-width: $screen-sm-min) {
+@media (max-width: $screen-xs-max) {
   .container {padding: 10px;}
   header {margin-bottom: 20px}
   ul li,ul.nav li {display: inline; margin-left: 5px}
-  #main_footer {height: 50px}
+  #main_footer {height: 50px; margin-top: 20px}
 }
 
 
