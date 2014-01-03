@@ -54,7 +54,6 @@ header {margin-bottom: 50px; }
 }
 
 
-
 // Nav
 .nav {
   li {margin-bottom: 10px;}
@@ -84,34 +83,7 @@ ul.feeds li {margin-top: 30px}
 
 // import original bootstrap
 @import "twitter/bootstrap";
-
-//
-//
-//  BOOSTRAP OVERRIDES
-//
-//
-
-.btn-default:hover {background-color: #ebebeb; border-color: white}
-
-@mixin min-height-two-columns {.two-columns {min-height: 800px;}}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
-  .container {padding: 50px;}
-  .two-columns {min-height: 550px;}
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
-  .container {padding: 50px;}
-  .two-columns {min-height: 450px;}
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
-  .container {padding: 50px; width: 1200px;}
-  @include min-height-two-columns;
-}
+@import "responsive";
 
 
 

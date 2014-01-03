@@ -1,0 +1,40 @@
+
+.btn-default:hover {background-color: #ebebeb; border-color: white}
+
+@mixin project($size) {
+  width: $size;
+  height: ($size / 3) * 2;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .container {padding: 50px;}
+  .two-columns {min-height: 550px;}
+
+  .lighter img {@include project(190px)}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+  // Main
+  .container {padding: 50px;}
+  .two-columns {min-height: 450px;}
+
+
+  // Projects
+  .lighter img {@include project(195px)}
+  .project_name {margin-bottom: 0px}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+  // Main
+  .container {padding: 50px; width: 1200px;}
+  .two-columns {min-height: 800px;}
+
+  // Projects
+  .lighter img {@include project(255px)}
+  .project_name {margin-bottom: 5px}
+}
