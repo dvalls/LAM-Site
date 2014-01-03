@@ -24,16 +24,8 @@
           = '- ' + project.title
 
 
-= javascript_include_tag "jquery.mixitup.min"
+= javascript_include_tag "jquery.mixitup.min", "mixitup"
 = stylesheet_link_tag "projects"
 
 
 = link_to('NOVO PROJETO', new_project_path, :class => 'btn btn-primary') if signed_in?
-
-
-:javascript
-  $(function(){
-
-      $('#Grid').mixitup();
-
-  });
