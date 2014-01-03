@@ -62,7 +62,15 @@
       / Footer
       %footer.row
 
-        .col-lg-3.col-md-3.col-sm-4
+        .col-lg-9.col-lg-push-3.col-md-9.col-md-push-3.col-sm-8.col-sm-push-4#main_footer
+
+          = yield :footer
+
+          %p.hidden-xs#link_anchor
+            = link_to '#anchor_top' do
+              %i.fa.fa-chevron-up
+
+        .col-lg-3.col-lg-pull-9.col-md-3.col-md-pull-9.col-sm-4.col-sm-pull-8
           %ul.social
             %li{:title => "FB.COM/STUDIOLAM.POA", "data-toggle" => "tooltip"}
               =link_to ENV['FACEBOOK_LINK']  do
@@ -87,11 +95,3 @@
           %p#email=t 'email'
           %address=t('address')
           = Time.now.year.to_s + t('copyright')
-
-        .col-lg-9.col-md-9.col-sm-8#main_footer
-
-          = yield :footer
-
-          %p#link_anchor
-            = link_to '#anchor_top' do
-              %i.fa.fa-chevron-up
