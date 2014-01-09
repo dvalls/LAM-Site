@@ -24,12 +24,6 @@ class ImagesController < ApplicationController
       @image.url = url
       @image.save
 
-      #if @image.save
-      #  redirect_to project_images_path(@imageable), notice: 'Image successfully created.'
-      #else
-      #  render action: 'new'
-      #end
-
     end
 
     redirect_to edit_polymorphic_path([@image.imageable]), notice: t('views.image.create')
@@ -67,7 +61,7 @@ class ImagesController < ApplicationController
       # With ID
       if name =~ /(.+)_id$/
         if $1 == 'project'
-          @imageable =  $1.classify.constantize.friendly.find(value) # Exclusive loading cause FriendlyId...
+          @imageable =  $1.classify.constantize.friendly.find(value) # Exclusive loading 'cause FriendlyId...
         else
           @imageable =  $1.classify.constantize.find(value)
         end
