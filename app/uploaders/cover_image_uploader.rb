@@ -33,7 +33,7 @@ class CoverImageUploader < CarrierWave::Uploader::Base
   #   process :scale => [50, 50]
   # end
 
-  process :resize_to_fit => [265, 177]
+  process :resize_to_fit => [255, 170]
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
