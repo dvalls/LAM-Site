@@ -4,7 +4,13 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @projects = Project.all
+    # Show all projects if admin. This u can (un)publish
+    if signed_in? then
+      @projects = Project.all
+    else
+      @projects = Project.all.where('publish = ?', true)
+    end
+
     @categories = Category.all
   end
 
@@ -57,6 +63,6 @@ class ProjectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def project_params
-      params.require(:project).permit(:title, :description, :body, :year, :tag_list, :slug, :cover_image, :category_ids => [])
+      params.require(:project).permit(:title, :description, :body, :year, :slug, :cover_image, :publish, :category_ids => [])
     end
 end

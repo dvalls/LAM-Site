@@ -21,6 +21,7 @@
             = '|' unless category == project.categories.last
 
           = '- ' + project.title
+          = ' (NÃO PUBLICADO)' if not project.publish?
 
 = javascript_include_tag "jquery.mixitup.min", "mixitup"
 = stylesheet_link_tag "projects"
