@@ -29,7 +29,7 @@ module ApplicationHelper
         # space_after_headers: true
 
     }
-    Redcarpet::Markdown.new(Helper::HtmlWithMarkdown, extensions).render(text).html_safe
+    Redcarpet::Markdown.new(HtmlWithMarkdown, extensions).render(text).html_safe
 
   end
 

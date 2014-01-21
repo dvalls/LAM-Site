@@ -1,4 +1,4 @@
-class Helper::HtmlWithMarkdown < Redcarpet::Render::HTML
+class HtmlWithMarkdown < Redcarpet::Render::HTML
 
   def initialize(options={})
     super options.merge(:hard_wrap => true, :link_attributes => { rel: 'nofollow' })
