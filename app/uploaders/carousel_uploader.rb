@@ -33,7 +33,7 @@ class CarouselUploader < CarrierWave::Uploader::Base
     process :resize_to_fit => [150, 75]
   end
 
-  process :resize_to_fit => [825, 412]
+  process :resize_to_limit => [825, 550]
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
