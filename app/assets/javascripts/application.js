@@ -2,6 +2,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require turbolinks_transitions
 
 //= require twitter/bootstrap/transition
 //= require twitter/bootstrap/carousel
@@ -22,8 +23,8 @@
 
 
 // Change cursor on Turbolinks on DOM transitions
-document.addEventListener("page:fetch", $('selector').css( 'cursor', 'progress' ));
-document.addEventListener("page:receive", $('selector').css( 'cursor', 'default' ));
+//document.addEventListener("page:fetch", $('selector').css( 'cursor', 'progress' ));
+//document.addEventListener("page:receive", $('selector').css( 'cursor', 'default' ));
 
 
 // Cleanup + enable Bootstrap tooltips on jQuery's ready event as well as

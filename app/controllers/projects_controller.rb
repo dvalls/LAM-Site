@@ -6,9 +6,9 @@ class ProjectsController < ApplicationController
   def index
     # Show all projects if admin. This u can (un)publish
     if signed_in? then
-      @projects = Project.all
+      @projects = Project.order(year: :desc)
     else
-      @projects = Project.all.where('publish = ?', true)
+      @projects = Project.all.where('publish = ?', true).order(year: :desc)
     end
 
     @categories = Category.all

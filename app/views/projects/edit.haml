@@ -8,8 +8,8 @@
     = image_tag @project.cover_image.url
     = f.input :cover_image, as: :file
     = f.association :categories, as: :check_boxes
+    = f.input :year, as: :date, discard_day: true
 
-    = f.input :year, as: :date,  discard_day: true, discard_month: true
     %hr
     %ul.list-unstyled
       = render :partial => 'images/image', :collection => @images, :as => :image

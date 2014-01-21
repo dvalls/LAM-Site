@@ -7,6 +7,7 @@ gem 'haml-rails'
 gem 'sass-rails'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :branch => '3.0.0'
 gem 'simple_form'
+gem 'turbolinks_transitions'
 
 # Markdown
 gem 'redcarpet'
