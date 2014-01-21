@@ -1,8 +1,13 @@
-
 .markdown {
-  h1, h2, h3, h4 {margin-top: 75px}
-}
+  h1, h2, h3, h4 {margin-top: 50px}
+  p img  {padding: 40px 0 40px 0}
+  p:nth-child(1) .center-block {padding: 0}
 
+  .column-2 {
+    width: 50%; margin-left: 50%;
+    img {float: right}
+  }
+}
 
 /*LIGHTER*/
 .lighter img {

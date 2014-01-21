@@ -1,9 +1,10 @@
-= simple_form_for(@image) do |f|
+= simple_form_for(@image,:html => {:multipart => true}) do |f|
   = f.error_notification
 
   .form-inputs
     = f.input :title
     = f.input :description
+    = f.input :url, as: :file
 
   .form-actions
     = f.button :submit, 'ATUALIZAR INFORMAÇÕES', :class => 'btn btn-primary'
