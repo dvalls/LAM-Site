@@ -1,24 +1,19 @@
 class CarouselsController < ApplicationController
-  before_action :set_carousel, only: [:show, :edit, :update, :destroy]
+  before_action :set_carousel, only: [:edit, :update, :destroy]
 
-  # GET /carousels
   def index
-    @carousels = Carousel.all
+    @carousels = Carousel.order(order: :asc)
   end
 
-
-  # GET /carousels/new
   def new
     @carousel = Carousel.new
     @projects = Project.all
   end
 
-  # GET /carousels/1/edit
   def edit
     @projects = Project.all
   end
 
-  # POST /carousels
   def create
     @carousel = Carousel.new(carousel_params)
 
@@ -29,7 +24,6 @@ class CarouselsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /carousels/1
   def update
     if @carousel.update(carousel_params)
       redirect_to action: 'index', notice: 'Carousel was successfully updated.'
@@ -38,7 +32,6 @@ class CarouselsController < ApplicationController
     end
   end
 
-  # DELETE /carousels/1
   def destroy
     @carousel.destroy
     redirect_to carousels_url, notice: 'Carousel was successfully destroyed.'
@@ -52,6 +45,6 @@ class CarouselsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def carousel_params
-      params.require(:carousel).permit(:project_id, :title, :description, :image_url)
+      params.require(:carousel).permit(:project_id, :title, :description, :image_url, :order)
     end
 end

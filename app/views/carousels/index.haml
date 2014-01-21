@@ -1,5 +1,6 @@
 %table.table
   %tr
+    %th Orden
     %th Projeto
     %th Título
     %th Descrição
@@ -8,6 +9,7 @@
 
   - @carousels.each do |carousel|
     %tr
+      %td= carousel.order
       %td= carousel.project.title
       %td= carousel.title
       %td= carousel.description
