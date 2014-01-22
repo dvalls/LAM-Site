@@ -1,6 +1,7 @@
 = simple_form_for(@image,:html => {:multipart => true}) do |f|
   = f.error_notification
 
+  %p= image_tag @image.url.url(:thumb)
   .form-inputs
     = f.input :title
     = f.input :description
