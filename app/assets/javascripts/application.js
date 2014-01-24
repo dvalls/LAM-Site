@@ -9,6 +9,7 @@
 //= require twitter/bootstrap/tooltip
 //= require twitter/bootstrap/alert
 //= require twitter/bootstrap/dropdown
+//= require jquery.mixitup.min
 // require twitter/bootstrap/button
 // require twitter/bootstrap/modal
 // require twitter/bootstrap/scrollspy
