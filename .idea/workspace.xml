@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b223ee0b-6d04-4fc0-bdaf-013072d9f162" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__Valls.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__LAM_Site.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/db_migrate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\images\carrossel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\images\logo_lam.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\admin\admin_area.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\admin\home.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\admin\tag.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\admin\user.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\public\uploads\feed\image\15\1.jpg" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
-      <change type="MOVED" beforePath="C:\Users\dvalls\Valls\ID\WEB\Valls-Site\app\assets\stylesheets\responsive.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/responsive.scss.old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/LAM Site.iml" afterPath="$PROJECT_DIR$/.idea/LAM Site.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_flash_message.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_flash_message.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/feed.rb" afterPath="$PROJECT_DIR$/app/models/feed.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/feeds/index.haml" afterPath="$PROJECT_DIR$/app/views/feeds/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.haml" afterPath="$PROJECT_DIR$/app/views/home/index.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/pt-BR.yml" afterPath="$PROJECT_DIR$/config/locales/pt-BR.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/feeds/show.haml" afterPath="$PROJECT_DIR$/app/views/feeds/show.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/valls-logo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/valls.gif" />
     </list>
     <list id="bb895f1c-9c82-46fd-8f9b-1e862a62bf12" name="ignore" comment="" />
     <ignored path="LAM Site.iws" />
@@ -143,7 +99,7 @@
       <file leaf-file-name="index.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6448276" vertical-offset="0" max-vertical-offset="870">
+            <state vertical-scroll-proportion="1.9146757" vertical-offset="0" max-vertical-offset="782">
               <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding />
             </state>
@@ -1373,7 +1329,11 @@
       <created>1391028064847</created>
       <updated>1391028064847</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="retomada">
+      <created>1406927416215</created>
+      <updated>1406927416215</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1398,10 +1358,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2462039" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6266234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6258134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44047618" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2028754" sideWeight="0.6923913" order="3" side_tool="false" content_ui="tabs" />
@@ -1436,7 +1396,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="getting beauty" />
     <MESSAGE value="amazon s3" />
     <MESSAGE value="little fixes" />
     <MESSAGE value="config" />
@@ -1461,7 +1420,8 @@
     <MESSAGE value="improving styles&#10;" />
     <MESSAGE value="improving&#10;" />
     <MESSAGE value="text line height" />
-    <option name="LAST_COMMIT_MESSAGE" value="text line height" />
+    <MESSAGE value="retomada" />
+    <option name="LAST_COMMIT_MESSAGE" value="retomada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1727,6 +1687,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37942123" vertical-offset="104" max-vertical-offset="1071">
           <caret line="20" column="18" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1872,7 +1833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6448276" vertical-offset="0" max-vertical-offset="870">
+        <state vertical-scroll-proportion="1.9146757" vertical-offset="0" max-vertical-offset="782">
           <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
           <folding />
         </state>
