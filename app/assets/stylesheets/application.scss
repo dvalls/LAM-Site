@@ -10,83 +10,97 @@
  *
  *= require_self
  * require_tree .
- */
-
-
-// BG color
-$body-bg: #EBEBEB;
+*/
 
 // Grid
-$grid-gutter-width:0;
+//$grid-columns:              12;
+//$grid-gutter-width:         30px;
+//$grid-float-breakpoint:     768px;
 
 
 // Typography
-$font-family-base: 'Roboto', helvetica, arial, sans-serif;
-$font-size-base: 10px;
+$font-family-base: 'Ubuntu Mono', helvetica, arial, sans-serif;
+$font-size-base: 14px;
 
-$headings-font-family: 'Rokkitt';
+$headings-font-family: 'Ubuntu Mono';
 $font-size-h1: $font-size-base * 5;
 $font-size-h2: $font-size-base * 4;
 $font-size-h3: $font-size-base * 3;
 $font-size-h4: $font-size-base * 2;
-$font-size-h5: $font-size-base * 1.5;
+$font-size-h5: $font-size-base * 1;
 
 
 // Buttons
-$btn-default-border: white;
-$btn-default-bg: #ebebeb;
+//$btn-default-border: white;
+//$btn-default-bg: #ebebeb;
 
 
-// Color
+//// Color
 $link-color: black;
-
-// Carousel indicators
-$carousel-indicator-border-color: black;
-$carousel-indicator-active-bg: black;
+$color-theme: black;
 
 
-.container {background-color: #ffffff; min-height: 100%; height: 100%; -webkit-font-smoothing: antialiased; }
+.container {-webkit-font-smoothing: antialiased; }
 
-// Header
-header {margin-bottom: 50px; }
+
 #i18n {
   float: right; color: lightgray;
   a {color: lightgray}
 }
 
+header {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
 
 // Nav
-.nav {
-  li {margin-bottom: 10px;}
-  a:hover {text-decoration: none}
-}
+nav {
+    float: right;
 
+    ul {
+      margin-top: 25px;
+      background-color: $color-theme;
+      border-radius: 7px;
+      padding: 3px 0 3px 40px;
+      a, a:hover {color: white; text-decoration: none; font-family: 'Open Sans',  helvetica, arial, sans-serif;}
+
+      li{
+      display: inline-block;
+      margin-right: 40px;
+      }
+    }
+}
 
 // Footer items
-footer {margin-top: 50px;}
-#main_footer {height: 185px;}
-p#link_anchor {bottom: 0; position: absolute; height: 5px}
-address {line-height: 1.25; font-style: normal; white-space: pre-line; margin-bottom: 30px; margin-top: 20px}
-ul.social {
-  margin-bottom: 25px; padding-left: 0;
-  li {display: inline; padding: 0 10px 5px 0; }
-  a {text-decoration: none; height: 15px }
+footer {
+  p {margin-top: 20px}
+  #description {width: 40%; margin: 100px 0 50px 0; font-size: 12px;}
 }
+
+
+ul.social {
+  float: right;
+  li {display: inline; padding-right: 15px;}
+  a {text-decoration: none; height: 15px}
+}
+
 .icon-margin i {margin-left: 5px;}
 
 // Main items
-ul.feeds li {margin-top: 30px}
-.markdown {font-family: 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px; line-height: 1.5}
+ul.feeds {
+  margin: 30px 0 30px;
+  li {padding-bottom: 10px}
+}
+//.markdown {font-family: 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px; line-height: 1.5}
 
 
-// System helper
-.alert {margin-top: 30px}
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-
-// import original bootstrap
-@import "twitter/bootstrap";
-@import "responsive";
-
-
+// TODO aprimorar
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0px;
+}
 
 

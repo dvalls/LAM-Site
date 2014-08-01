@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="561339729">
-    <data-source source="LOCAL" name="Rails LAM Site: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="bb7c2981-351b-4762-b546-8ce83da38ae2">
+  <component name="DataSourceManagerImpl" format="xml" hash="1380541929">
+    <data-source source="LOCAL" name="Rails LAM Site: development" uuid="8465e992-d3b8-4472-a028-134d89a41399">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\dvalls\RubymineProjects\LAM Site\db\development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\dvalls\Valls\ID\WEB\Valls-Site\db\development.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
         </library>
         <library>
-          <url>jar://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar!/</url>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
         </library>
       </libraries>
     </data-source>

@@ -11,87 +11,76 @@
     = yield :head
 
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
-    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    %link{href: "http://fonts.googleapis.com/css?family=Roboto:300|Rokkitt:700", rel: "stylesheet", type: "text/css"}
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    %link{href: "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Ubuntu+Mono", rel: "stylesheet", type: "text/css"}
     %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css", rel: "stylesheet"}
 
     / Google+
-    %script{parsetags: "explicit", src: "https://apis.google.com/js/plusone.js", type: "text/javascript"}
+    /%script{parsetags: "explicit", src: "https://apis.google.com/js/plusone.js", type: "text/javascript"}
 
     = csrf_meta_tags
 
   %body
 
-    #content.container
+    .container
+
+      -##i18n
+      -#  = link_to 'PT-BR', :locale=>'pt-BR'
+      -#  |
+      -#  = link_to 'ENG', :locale=>'en'
 
       / Header
-      %header.row
+      %header
 
-        #i18n
-          = link_to 'PT-BR', :locale=>'pt-BR'
-          |
-          = link_to 'ENG', :locale=>'en'
+        = link_to image_tag(ENV['LOGO_URL']), root_path
 
-        =link_to(image_tag(ENV['LOGO_URL']), root_path)
+        %nav
+          %ul
+            %li=link_to(t('nav.about'), about_path)
+            %li=link_to(t('nav.projects'), projects_path)
+            %li=link_to(t('nav.feeds'), feeds_path)
+            %li=link_to(t('nav.contact'), contact_path)
+
+
+        = yield :menu
 
         = render :partial => 'layouts/flash_message'
 
-      / Row 2 columns
-      .row
-        / Row 1 - Nav & Footer
-        %aside.col-lg-3.col-md-3.col-sm-4
 
-          / Nav
-          .row.two-columns
-            %nav.col-lg-5.col-sm-5.nav
-              %ul.list-unstyled
-                %li=link_to(t('nav.projects'), projects_path)
-                %li=link_to(t('nav.about'), about_path)
-                %li=link_to(t('nav.contact'), contact_path)
+      / Main content
+      %main
 
-            .col-lg-7.col-md-5.col-sm-5
-              = yield :menu
-
-        / Row 2 - Main content
-        %main.col-lg-9.col-md-9.col-sm-8
-
-          / Main
-          = yield
+        / Main
+        = yield
 
       / Footer
-      %footer.row
+      %footer
 
-        .col-lg-9.col-lg-push-3.col-md-9.col-md-push-3.col-sm-8.col-sm-push-4#main_footer
+        #description
+          %p= image_tag 'valls.gif'
+          %p=t 'meta.description'
 
-          = yield :footer
+        = t('copyright') + Time.now.year.to_s
 
-          %p.hidden-xs#link_anchor
-            = link_to '#content' do
-              %i.fa.fa-chevron-up
+        %ul.social
+          %li{:title => "fb.com/valls.cc", "data-toggle" => "tooltip"}
+            =link_to ENV['FACEBOOK_LINK']  do
+              %i.fa.fa-facebook.fa-lg
+          %li{:title => "INSTAGRAM", "data-toggle" => "tooltip"}
+            =link_to ENV['INSTAGRAM_LINK'] do
+              %i.fa.fa-instagram.fa-lg
+          %li{:title => "PINTEREST", "data-toggle" => "tooltip"}
+            =link_to ENV['PINTEREST_LINK']do
+              %i.fa.fa-pinterest.fa-lg
+          %li{:title => "TWITTER", "data-toggle" => "tooltip"}
+            =link_to ENV['TWITTER_LINK'] do
+              %i.fa.fa-twitter.fa-lg
+          %li{:title => "VIMEO", "data-toggle" => "tooltip"}
+            =link_to ENV['VIMEO_LINK'] do
+              %i.fa.fa-vimeo-square.fa-lg
+          %li{:title => "GOOGLE+", "data-toggle" => "tooltip"}
+            =link_to ENV['GOOGLE_PLUS_LINK'] do
+              %i.fa.fa-google-plus.fa-lg
 
-        .col-lg-3.col-lg-pull-9.col-md-3.col-md-pull-9.col-sm-4.col-sm-pull-8
-          %ul.social
-            %li{:title => "FB.COM/STUDIOLAM.POA", "data-toggle" => "tooltip"}
-              =link_to ENV['FACEBOOK_LINK']  do
-                %i.fa.fa-facebook.fa-2x
-            %li{:title => "INSTAGRAM", "data-toggle" => "tooltip"}
-              =link_to ENV['INSTAGRAM_LINK'] do
-                %i.fa.fa-instagram.fa-2x
-            %li{:title => "PINTEREST", "data-toggle" => "tooltip"}
-              =link_to ENV['PINTEREST_LINK']do
-                %i.fa.fa-pinterest.fa-2x
-            %li{:title => "TWITTER", "data-toggle" => "tooltip"}
-              =link_to ENV['TWITTER_LINK'] do
-                %i.fa.fa-twitter.fa-2x
-            %li{:title => "VIMEO", "data-toggle" => "tooltip"}
-              =link_to ENV['VIMEO_LINK'] do
-                %i.fa.fa-vimeo-square.fa-2x
-            %li{:title => "GOOGLE+", "data-toggle" => "tooltip"}
-              =link_to ENV['GOOGLE_PLUS_LINK'] do
-                %i.fa.fa-google-plus.fa-2x
 
-          %p#telephone=t 'phone'
-          %p#email=t 'email'
-          %address=t('address')
-          = Time.now.year.to_s + t('copyright')

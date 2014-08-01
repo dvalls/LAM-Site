@@ -11,7 +11,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
-module LAMSite
+module Valls
   class Application < Rails::Application
 
     #config.assets.initialize_on_precompile = false

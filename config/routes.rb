@@ -1,4 +1,4 @@
-LAMSite::Application.routes.draw do
+Valls::Application.routes.draw do
 
   root 'home#index'
 

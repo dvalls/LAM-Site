@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LAMSite::Application.load_tasks
+Valls::Application.load_tasks

@@ -2,26 +2,27 @@ pt-BR:
 
   meta:
     description: |
-      LAM é um escritório de projeto com base em Porto Alegre, sul do Brasil.
+      Somos um escritório de projeto com base em Porto Alegre, sul do Brasil.
       Desenvolvemos projetos em diferentes escalas e usos, com uma linha de abordagem transversal que abrange as áreas de arquitetura, engenharia e software.
     keywords: Arquitetura Porto Alegre, ...
 
   nav:
-    projects: PROJETOS
-    about: ESCRITÓRIO
-    contact: CONTATO
+    projects: projetos
+    about: escritório
+    feeds: notícias
+    contact: contato
     all_projects: TODOS
 
 
-  phone: +51 8138-8758
-  email: CONTATO@LAM-STUDIO.COM.BR
+  phone: +51 3379-7679
+  email: contato@valls.cc
   address: |
-    RUA SANTO ANTÔNIO, 366. SALA 04
-    BAIRRO INDEPENDÊNCIA
-    PORTO ALEGRE - RS
+    Rua Santo Antônio, 366. Sala 04
+    Bairro Independência
+    Porto Alegre - RS
     CEP 90220-010
 
-  copyright: ' - TODOS DIREITOS RESERVADOS'
+  copyright: 'todos direitos reservados - '
 
   date:
     formats:
@@ -30,10 +31,10 @@ pt-BR:
 
   # System messages
   views:
-    all_news: TODAS AS NOTÍCIAS
-    share: COMPARTILHAR
-    close: FECHAR
-    like_us: CURTA NOSSA PÁGINA
+    all_news: + notícias
+    share: Compartilhar
+    close: Fechar
+    like_us: Curta nossa página
 
 
     updated_ok: Informações atualizadas com sucesso.

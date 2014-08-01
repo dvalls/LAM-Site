@@ -1,10 +1,13 @@
 %ul.feeds.list-unstyled
   - @feeds.each do |feed|
     %li
-      %h4= feed.title
+      %h5
+        %b= feed.title
+        |
+        =l feed.updated_at.to_date, format: :default
       = image_tag feed.image unless feed.image.blank?
-      .markdown= markdown(feed.body)
-      %p=l feed.updated_at.to_date, format: :default
+      %p= markdown(feed.body)
+
       - if signed_in?
         %p
           = link_to 'VER', feed

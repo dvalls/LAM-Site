@@ -1,24 +1,23 @@
 // Carousel
 #carousel {background-color: light-gray}
-#carousel .item > img {
-  width: 100%;
-}
+#carousel .item > img {width: 100%;}
+
 
 .carousel-caption {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   left: 0;
   text-align: left;
   padding: 10px;
   bottom: 0;
-  width: 250px;
+  width: 100%;
 }
+
 
 .carousel-caption a{
   color: white;
   text-decoration: none;
 }
-
 
 .carousel-indicators {
   position: absolute;
