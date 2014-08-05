@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
 
 
   def show
+    render layout: 'project'
   end
 
 

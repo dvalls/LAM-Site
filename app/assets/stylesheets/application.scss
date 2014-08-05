@@ -35,7 +35,7 @@ $font-size-h5: $font-size-base * 1;
 //$btn-default-bg: #ebebeb;
 
 
-//// Color
+// Color
 $link-color: black;
 $color-theme: black;
 
@@ -101,6 +101,13 @@ ul.feeds {
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0px;
+}
+
+.alert {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 

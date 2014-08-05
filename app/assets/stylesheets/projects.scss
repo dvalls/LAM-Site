@@ -1,14 +1,27 @@
-.markdown {
-  h1, h2 {margin-top: 50px}
-  h4 {margin-top: 25px}
-  p img  {padding: 40px 0 40px 0}
-  p:nth-child(1) .center-block {padding: 0}
+// ---------------
+// Project Index
 
-  .column-2 {
-    width: 50%; margin-left: 50%;
-    //img {float: right}
+
+// Grid Nav
+#navGrid {
+  margin-bottom: 50px;
+  text-align: center;
+
+  li{
+    display: inline-block;
+    margin-right: 40px;
+    border-bottom: 1px dotted;
+    font-family: 'Open Sans',  helvetica, arial, sans-serif;
   }
 }
+
+
+// Grid Projects MixItUp
+#Grid .mix{display: none;}
+
+ul#Grid {padding: 0}
+
+li.filter {cursor: pointer;}
 
 /*LIGHTER*/
 .lighter img {
@@ -25,21 +38,21 @@
 }
 
 
-// Grid Projects MixItUp
-ul#Grid {padding: 0}
 
-#Grid {
-  .mix{opacity: 0;display: none;}
-  a {text-decoration: none;}
-}
-
-li.filter {cursor: pointer;}
+//-------------
+// Project Show
 
 
-// social links
-#social_links {
-  button {margin-right: 20px;}
-  ul li {margin: 10px; width: 300px}
+.markdown {
+  h1, h2 {margin-top: 50px}
+  h4 {margin-top: 25px}
+  p img  {padding: 40px 0 40px 0}
+  p:nth-child(1) .center-block {padding: 0}
+
+  .column-2 {
+    width: 50%; margin-left: 50%;
+    //img {float: right}
+  }
 }
 
 

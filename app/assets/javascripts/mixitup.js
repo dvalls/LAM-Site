@@ -1,5 +1,5 @@
 $(function(){
 
-  $('#Grid').mixitup();
+  $('#Grid').mixItUp();
 
 });
