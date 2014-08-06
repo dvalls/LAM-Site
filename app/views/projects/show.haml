@@ -6,41 +6,22 @@
   %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:site_name"}
 
 
-%h1=@project.title
-%h3=@project.description
+%header
+  = link_to '', projects_path, :class => 'pull-right fa fa-times'
 
-= link_to '', projects_path, :class => 'fa fa-times'
+  %h1
+    = @project.slug
+    %span#project-title= @project.title
+
+.row
+  %em.col-lg-4= @project.description
 
 / Project Body
 .markdown= markdown @project.body unless @project.body.nil?
 
 
-/ Social Links
-#social_links
-  .btn-group.dropup
-    %button.btn.btn-default.dropdown-toggle.icon-margin{"data-toggle" => "dropdown", type: "button"}
-      =t('views.share')
-      %i.fa.fa-share
-    %ul.dropdown-menu
-      %li
-        .fb-like{"data-action" => "like", "data-href" => "#{request.original_url}", "data-layout" => "button_count", "data-share" => "true", "data-show-faces" => "true"}
-      %li
-        .g-plusone{"data-size" => "medium"}
-      %li
-        %a.twitter-share-button{href: "#{request.original_url}"} Tweet
-        %script{src: "//platform.twitter.com/widgets.js"}
-
-  .btn-group.dropup
-    %a.btn.btn-default.dropdown-toggle.icon-margin{"data-toggle" => "dropdown", type: "button"}
-      =t('views.like_us')
-      %i.fa.fa-heart
-    %ul.dropdown-menu
-      %li
-        .fb-like-box{"data-colorscheme" => "light", "data-header" => "false", "data-href" => "#{ENV['FACEBOOK_LINK']}", "data-show-border" => "false", "data-stream" => "false"}
-
-
-= stylesheet_link_tag "projects"
-= javascript_include_tag "jquery.lazyload.min", "projects", "social-media-google-plus"
+= stylesheet_link_tag "project"
+= javascript_include_tag "jquery.lazyload.min", "project", "social-media-google-plus"
 
 - if signed_in?
   %p

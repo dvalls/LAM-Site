@@ -30,18 +30,13 @@
       -#  |
       -#  = link_to 'ENG', :locale=>'en'
 
-      / Header
-      %header
+      = render :partial => 'layouts/flash_message'
 
+      / Article
+      %article
 
-        = render :partial => 'layouts/flash_message'
-
-
-      / Main content
-      %main
-
-        / Main
         = yield
+
 
       / Footer
       %footer

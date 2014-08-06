@@ -1,0 +1,54 @@
+article header h1 {
+
+  background-color: black;
+  color: white;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  display:inline;
+  border-radius: 7px;
+  padding: 0 20px 0 20px;
+
+  span#project-title {font-weight: 300}
+}
+
+
+.markdown {
+
+  margin-top: 100px;
+
+  h1, h2 {margin-top: 50px}
+  h4 {margin-top: 25px}
+  p img  {padding: 40px 0 40px 0}
+  p:nth-child(1) .center-block {padding: 0}
+
+  .column-2 {
+    width: 50%; margin-left: 50%;
+    //img {float: right}
+  }
+}
+
+
+// Videos CSS hack responsive
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
