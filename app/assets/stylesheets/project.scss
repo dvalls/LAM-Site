@@ -9,8 +9,18 @@ article header h1 {
   border-radius: 7px;
   padding: 0 20px 0 20px;
 
-  span#project-title {font-weight: 300}
+  span#project-title {font-weight: 300; letter-spacing: -1px}
 }
+
+.close-project {
+  float: right;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  a {text-decoration: none;}
+}
+
+p.description {margin: 25px 0 25px 0}
 
 
 .markdown {

@@ -7,18 +7,23 @@
 
 
 %header
-  = link_to '', projects_path, :class => 'pull-right fa fa-times'
 
   %h1
     = @project.slug
     %span#project-title= @project.title
 
+  .close-project= link_to 'X', projects_path
+
 .row
-  %em.col-lg-4= @project.description
+  %em.col-lg-4
+    &#126;&#126;&#126;
+
+    %p.description= @project.description
+
+    &#126;&#126;&#126;
 
 / Project Body
 .markdown= markdown @project.body unless @project.body.nil?
-
 
 = stylesheet_link_tag "project"
 = javascript_include_tag "jquery.lazyload.min", "project", "social-media-google-plus"
