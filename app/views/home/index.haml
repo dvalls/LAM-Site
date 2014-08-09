@@ -1,8 +1,8 @@
-- content_for :head do
-  %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:title"}
-  %meta{content: "#{ENV['LOGO_URL']}", property: "og:image"}
-  %meta{content: "#{t('meta.description')}", property: "og:description"}
-
+-#- content_for :head do
+-#  %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:title"}
+-#  %meta{content: "#{ENV['LOGO_URL']}", property: "og:image"}
+-#  %meta{content: "#{t('meta.description')}", property: "og:description"}
+-#
 
 / Carousel
 #carousel.carousel.slide
@@ -39,3 +39,5 @@
 =link_to t('views.all_news'), feeds_path
 
 = stylesheet_link_tag "home"
+= javascript_include_tag "home"
+

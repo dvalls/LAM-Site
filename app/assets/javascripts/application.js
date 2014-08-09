@@ -2,10 +2,14 @@
 //= require jquery
 //= require jquery_ujs
 
-// TODO importar somente algumas libs
-//= require bootstrap-sprockets
+// Bootstrap
+//= require bootstrap/transition
+//= require bootstrap/carousel
+//= require bootstrap/affix
+//= require bootstrap/button
+//= require bootstrap/alert
+//= require bootstrap/tooltip
 
-//= require social-media-facebook.js
 
 // require_tree .
 

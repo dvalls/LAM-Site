@@ -22,7 +22,7 @@
 $font-family-base: 'Ubuntu Mono', helvetica, arial, sans-serif;
 $font-size-base: 14px;
 
-//$headings-font-family: 'Open Sans';
+$headings-font-family: 'Open Sans';
 //$font-size-h1: $font-size-base * 5;
 //$font-size-h2: $font-size-base * 4;
 //$font-size-h3: $font-size-base * 3;
@@ -73,16 +73,20 @@ nav {
 
 // Footer items
 footer {
+  //font-size: 12px;
+
   p {margin-top: 20px}
-  #description {width: 40%; margin: 100px 0 50px 0; font-size: 12px;}
+  #description {width: 40%; margin: 100px 0 50px 0;}
+
+  ul.social {
+    float: right;
+    li {display: inline; padding-right: 15px;}
+    a {text-decoration: none; height: 15px}
+  }
 }
 
 
-ul.social {
-  float: right;
-  li {display: inline; padding-right: 15px;}
-  a {text-decoration: none; height: 15px}
-}
+
 
 .icon-margin i {margin-left: 5px;}
 
@@ -91,6 +95,7 @@ ul.feeds {
   margin: 30px 0 30px;
   li {padding-bottom: 10px}
 }
+
 //.markdown {font-family: 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px; line-height: 1.5}
 
 

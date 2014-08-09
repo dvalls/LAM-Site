@@ -1,3 +1,5 @@
 = link_to 'EDITAR', edit_contact_path, :class => 'pull-right btn btn-primary' if signed_in?
 
 .markdown= markdown @contact.body unless @contact.body.blank?
+
+%iframe{frameborder: "0", height: "400px", src: "https://a.tiles.mapbox.com/v4/dvalls.j6ellpgd/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiZHZhbGxzIiwiYSI6IkhDSTNFY1UifQ.HbgEEd4P3h8GdYZ_wnMUMQ", width: "100%"}
