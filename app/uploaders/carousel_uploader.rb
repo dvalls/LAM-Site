@@ -28,11 +28,12 @@ class CarouselUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
 
-  process :resize_to_limit => [825, 550]
+  # 9:16
+  process :resize_to_fill => [1140, 641]
 
   # Create different versions of your uploaded files:
   version :thumb do
-    process :resize_to_fit => [150, 75]
+    process :resize_to_fill => [150, 84]
   end
 
 

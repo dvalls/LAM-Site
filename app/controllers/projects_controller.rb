@@ -60,6 +60,10 @@ class ProjectsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_project
       @project = Project.friendly.find(params[:id])
+      @id = @project.id
+
+      @project_previous = Project.where("id < ? and publish = ?", @id, true).order(id: :desc).first
+      @project_next = Project.where("id > ? and publish = ?", @id, true).order(:id).first
     end
 
     # Only allow a trusted parameter "white list" through.

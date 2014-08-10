@@ -25,8 +25,10 @@
 / Project Body
 .markdown= markdown @project.body unless @project.body.nil?
 
-Compartilhe
+
+/ Social Links
 %ul.list-inline
+  Compartilhe este projeto:
   %li
     = link_to 'https://www.facebook.com/sharer/sharer.php?u=' + request.original_url, :target => "_blank" do
       %i.fa.fa-facebook.fa-lg
@@ -38,12 +40,24 @@ Compartilhe
       %i.fa.fa-google-plus.fa-lg
 
 
+/ Project Navigation
+.project-nav
+  - if not @project_previous.nil?
+  .previous
+    = link_to @project_previous do
+      %i.fa.fa-angle-left
+      = @project_previous.title
+
+  .overview
+    = link_to projects_path do
+      %i.i.fa.fa-th
+  .next= link_to @project_next.title + ' >', @project_next if not @project_next.nil?
 
 = stylesheet_link_tag "project"
 = javascript_include_tag "jquery.lazyload.min", "project"
 
 - if signed_in?
-  %p
+  %p.clearfix
     = link_to 'EDITAR', edit_project_path(@project), :class => 'btn btn-primary'
     = link_to 'APAGAR', @project, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-primary'
 

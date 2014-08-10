@@ -1,5 +1,5 @@
 - flash.each do |name, msg|
   - if msg.is_a?(String)
-    %div{class: "alert col-lg-8 col-md-8 col-sm-8 hidden-xs alert-#{name == :notice ? "info" : "error"} alert-dismissible", role: "alert"}
+    %div{class: "alert col-lg-12 col-md-12 col-sm-12 hidden-xs alert-#{name == :notice ? "info" : "error"} alert-dismissible", role: "alert"}
       %a.close{"data-dismiss" => "alert"} ×
       = content_tag :div, msg, :id => "flash_#{name}"

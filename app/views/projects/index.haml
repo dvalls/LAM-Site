@@ -14,13 +14,15 @@
     %li.mix.col-lg-4.col-md-4.col-sm-6{:class => "#{categories_helper(project)}", "data-age" => project.year.year}
       = link_to project do
         .lighter= image_tag project.cover_image.url,  :class => 'img-responsive'
-        .project_name
+        .project-name
           - project.categories.each do |category|
             = category.shortname.upcase
             = '|' unless category == project.categories.last
 
           = '- ' + project.title
           = ' (NÃO PUBLICADO)' if not project.publish?
+
+
 
 = javascript_include_tag "jquery.mixitup.min", "mixitup"
 = stylesheet_link_tag "projects"

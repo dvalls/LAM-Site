@@ -109,6 +109,9 @@ ul.feeds {
 }
 
 .alert {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 0;
