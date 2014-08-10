@@ -51,6 +51,7 @@
   .overview
     = link_to projects_path do
       %i.i.fa.fa-th
+
   .next= link_to @project_next.title + ' >', @project_next if not @project_next.nil?
 
 = stylesheet_link_tag "project"
