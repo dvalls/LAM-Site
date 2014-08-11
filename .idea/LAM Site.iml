@@ -272,7 +272,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord-deprecated_finders (v1.0.3, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.0.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v4.0.2, ruby-2.0.0-p247 (1)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v2.2.0.20140727, ruby-2.0.0-p247 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v2.2.0.20140804, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.50.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.2.0.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, ruby-2.0.0-p247 (1)) [gem]" level="application" />
@@ -323,7 +323,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks_transitions (v0.0.5, ruby-2.0.0-p247 (1)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.40, ruby-2.0.0-p247 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.41, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.3, ruby-2.0.0-p247 (1)) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

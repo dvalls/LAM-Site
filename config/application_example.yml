@@ -1,16 +1,15 @@
 # Admin
-USER_ID   : 'lam'
-PASSWORD  : 'lam2013'
+USER_ID   : ''
+PASSWORD  : ''
 
 # Amazon S3
-AMAZON_BUCKET_NAME: 'lam-site'
-AMAZON_KEY_ID: 'AKIAJ5B54KTS37ZQW5SA'
-AMAZON_ACCESS_KEY: '7WvPHGx8FEBzrw2Iw1tvn2dxBl7mVfKfcqQNu9E7'
+AMAZON_BUCKET_NAME: ''
+AMAZON_KEY_ID: ''
+AMAZON_ACCESS_KEY: ''
 
 
-
-OFFICE_NAME : 'studioLAM'
-LOGO_URL : 'logo_studio_lam.jpg'
+OFFICE_NAME : ''
+LOGO_URL : ''
 
 # Social media
 FACEBOOK_LINK : ''

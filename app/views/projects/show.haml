@@ -43,16 +43,20 @@
 / Project Navigation
 .project-nav
   - if not @project_previous.nil?
-  .previous
-    = link_to @project_previous do
-      %i.fa.fa-angle-left
-      = @project_previous.title
+    .previous
+      = link_to @project_previous do
+        %i.fa.fa-chevron-left
+        = @project_previous.title
 
   .overview
     = link_to projects_path do
-      %i.i.fa.fa-th
+      %i.fa.fa-th
 
-  .next= link_to @project_next.title + ' >', @project_next if not @project_next.nil?
+  - if not @project_next.nil?
+    .next
+      = link_to @project_next do
+        = @project_next.title
+        %i.fa.fa-chevron-right
 
 = stylesheet_link_tag "project"
 = javascript_include_tag "jquery.lazyload.min", "project"
