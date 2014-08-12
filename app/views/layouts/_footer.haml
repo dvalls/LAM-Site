@@ -1,12 +1,13 @@
 %footer
 
-  #description
-    %p= image_tag 'valls.gif'
-    %p=t 'meta.description'
+  .row
+    #description.col-lg-6.col-sm-12
+      %p= image_tag 'valls.gif'
+      %p=t 'meta.description'
 
   = t('copyright') + Time.now.year.to_s
 
-  %ul.social
+  %ul.social.hidden-xs
     %li{:title => "facebook", "data-toggle" => "tooltip"}
       =link_to ENV['FACEBOOK_LINK'], :target => "_blank"  do
         %i.fa.fa-facebook.fa-lg

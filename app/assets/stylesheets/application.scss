@@ -54,10 +54,10 @@ header {
 }
 
 // Nav
-nav {
-    float: right;
+//ul.nav {
+//    float: right;
 
-    ul {
+    ul.nav {
       margin-top: 25px;
       background-color: $color-theme;
       border-radius: 7px;
@@ -69,14 +69,15 @@ nav {
       margin-right: 40px;
       }
     }
-}
+//}
+
 
 // Footer items
 footer {
   //font-size: 12px;
 
   p {margin-top: 20px}
-  #description {width: 40%; margin: 100px 0 50px 0;}
+  #description {margin: 100px 0 50px 0;}
 
   ul.social {
     float: right;
@@ -84,8 +85,6 @@ footer {
     a {text-decoration: none; height: 15px}
   }
 }
-
-
 
 
 .icon-margin i {margin-left: 5px;}
@@ -117,5 +116,8 @@ ul.feeds {
   margin-left: 0;
   margin-right: 0;
 }
+
+.navbar-toggle {background-color: lightgray}
+
 
 

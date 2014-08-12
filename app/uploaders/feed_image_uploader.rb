@@ -34,6 +34,12 @@ class FeedImageUploader < CarrierWave::Uploader::Base
   #   process :scale => [50, 50]
   # end
 
+  process :resize_to_limit => [900, 900]
+
+  version :thumb do
+    process :resize_to_limit => [300, nil]
+  end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_white_list
