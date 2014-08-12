@@ -26,10 +26,11 @@ en:
 
   # System messages
   views:
-    all_news: ALL NEWS
-    share: SHARE
-    close: CLOSE
-    like_us: LIKE US ON OUR FAN PAGE
+    all_news: + news
+    share: Share
+    close: Close
+    share_this_project: Share this project
+    back_to_gallery: Back gallery
 
 
     updated_ok: Informações atualizadas com sucesso.
