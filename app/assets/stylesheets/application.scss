@@ -30,24 +30,11 @@ $headings-font-family: 'Open Sans';
 //$font-size-h5: $font-size-base * 1;
 
 
-// Buttons
-//$btn-default-border: white;
-//$btn-default-bg: #ebebeb;
-
-
 // Color
 $link-color: black;
 $color-theme: black;
 
-$navbar-height: 10px;
-$nav-link-padding: 3px;
-$navbar-default-color: #247751;
-$navbar-default-bg: white;
-$navbar-default-link-color: rgba(39, 57, 255, 0);
-
-
 .container {-webkit-font-smoothing: antialiased; }
-
 
 #i18n {
   float: right; color: lightgray;
@@ -59,42 +46,41 @@ header {
   margin-bottom: 75px;
 }
 
-.navbar-collapse {padding: 0 !important;}
 
 // Nav
 nav {
     float: right;
-    margin-top: 20px;
+    margin-top: 25px;
 
     ul.nav {
-      //margin-top: 25px;
       background-color: $color-theme;
       border-radius: 7px;
 
-      a, a:hover {padding: 3px 0 3px 40px;color: white; text-decoration: none; font-family: 'Open Sans',  helvetica, arial, sans-serif;}
-
-      li{
-      display: inline-block;
-      margin-right: 40px;
+      li {
+        margin: 0 10px 0 10px;
+        a, a:hover {
+          padding: 3px 20px 3px 20px;
+          color: white;
+          background-color: $color-theme;
+          text-decoration: none;
+          font-family: 'Open Sans',  helvetica, arial, sans-serif;}
       }
     }
 }
 
+.navbar-collapse {padding: 0 !important;}
 
 // Footer items
 footer {
-  //font-size: 12px;
-
   p {margin-top: 20px}
   #description {margin: 100px 0 50px 0;}
 
   ul.social {
     float: right;
-    li {display: inline; padding-right: 15px;}
+    li {display: inline; padding: 0 7px 0 7px;}
     a {text-decoration: none; height: 15px}
   }
 }
-
 
 .icon-margin i {margin-left: 5px;}
 
@@ -104,17 +90,15 @@ ul.feeds {
   li {padding-bottom: 10px}
 }
 
-//.markdown {font-family: 'Roboto', helvetica, verdana, arial, sans-serif; font-size: 12px; line-height: 1.5}
-
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// TODO aprimorar
-.form-horizontal .form-group {
-  margin-left: 0;
-  margin-right: 0px;
-}
+//// TODO aprimorar
+//.form-horizontal .form-group {
+//  margin-left: 0;
+//  margin-right: 0px;
+//}
 
 .alert {
   position: absolute;
@@ -126,7 +110,11 @@ ul.feeds {
   margin-right: 0;
 }
 
-.navbar-toggle {background-color: lightgray}
+.navbar-toggle {
+  border-color: $color-theme;
+  span {background-color: $color-theme;}
+}
+
 
 
 

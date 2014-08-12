@@ -273,7 +273,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.0.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v4.0.2, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v2.2.0.20140804, ruby-2.0.0-p247 (1)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.50.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.51.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.2.0.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, ruby-2.0.0-p247 (1)) [gem]" level="application" />
@@ -297,7 +297,7 @@
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v3.6.0@6d0f8f, ruby-2.0.0-p247 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v3.8.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.6.0, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, ruby-2.0.0-p247 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.10.1, ruby-2.0.0-p247 (1)) [gem]" level="application" />
