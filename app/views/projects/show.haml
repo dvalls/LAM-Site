@@ -15,10 +15,10 @@
   .close-project= link_to 'X', projects_path
 
 .row
-  %em.col-lg-5.col-sm-8
+  %col-lg-5
     &#126;&#126;&#126;
 
-    %p.description= @project.description
+    %p.description= markdown @project.description
 
     &#126;&#126;&#126;
 
