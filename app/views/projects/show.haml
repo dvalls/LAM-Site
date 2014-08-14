@@ -15,15 +15,15 @@
   .close-project= link_to 'X', projects_path
 
 .row
-  %col-lg-5
+  .col-lg-5
     &#126;&#126;&#126;
 
-    %p.description= markdown @project.description
+    %p.description=  @project.description.html_safe
 
     &#126;&#126;&#126;
 
 / Project Body
-.markdown= markdown @project.body unless @project.body.nil?
+.markdown.clearfix= markdown @project.body unless @project.body.nil?
 
 
 / Social Links
