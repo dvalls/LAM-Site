@@ -25,10 +25,11 @@ p.description {margin: 25px 0 25px 0}
 .markdown {
 
   margin: 100px 0 100px 0;
+  font-style: 12px;
 
-  h1, h2 {margin-top: 50px}
+  h1, h2, h3 {margin-top: 50px}
   h4 {margin-top: 25px}
-  p img  {padding: 40px 0 40px 0}
+  p img  {padding: 20px 0 20px 0}
   p:nth-child(1) .center-block {padding: 0}
 
   .column-2 {

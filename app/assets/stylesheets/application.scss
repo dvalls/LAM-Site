@@ -21,9 +21,10 @@
 // Typography
 $font-family-base: 'Ubuntu Mono', helvetica, arial, sans-serif;
 $font-size-base: 14px;
-$line-height-base: 1.2;
+$line-height-base: 1.25;
 
 $headings-font-family: 'Open Sans';
+$headings-font-weight: '700';
 //$font-size-h1: $font-size-base * 5;
 //$font-size-h2: $font-size-base * 4;
 //$font-size-h3: $font-size-base * 3;
@@ -35,6 +36,9 @@ $headings-font-family: 'Open Sans';
 $link-color: black;
 $color-theme: black;
 
+// Ruler
+$offset-contents: 75px;
+
 .container {-webkit-font-smoothing: antialiased; }
 
 #i18n {
@@ -44,7 +48,7 @@ $color-theme: black;
 
 header {
   margin-top: 50px;
-  margin-bottom: 75px;
+  margin-bottom: $offset-contents;
 }
 
 
@@ -78,8 +82,9 @@ nav {
 
 // Footer items
 footer {
+  margin-bottom: 10px;
   p {margin-top: 20px}
-  #description {margin: 100px 0 50px 0;}
+  #description {margin: $offset-contents 0 $offset-contents 0;}
 
   ul.social {
     float: right;
