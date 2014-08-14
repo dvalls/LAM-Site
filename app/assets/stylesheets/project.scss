@@ -27,15 +27,15 @@ p.description {margin: 25px 0 25px 0}
   margin: 100px 0 100px 0;
   font-style: 12px;
 
-  h1, h2, h3 {margin-top: 50px}
+  h1, h2, h3 {margin-top: 50px;  letter-spacing: -1px}
   h4 {margin-top: 25px}
   p img  {padding: 20px 0 20px 0}
-  p:nth-child(1) .center-block {padding: 0}
+  //p:nth-child(1) .center-block {padding: 0}
 
-  .column-2 {
-    width: 50%; margin-left: 50%;
-    //img {float: right}
-  }
+//  .column-2 {
+//    width: 50%; margin-left: 50%;
+//    //img {float: right}
+//  }
 }
 
 .project-nav {
