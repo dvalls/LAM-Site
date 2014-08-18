@@ -59,12 +59,12 @@ nav {
 
     ul.nav {
       background-color: $color-theme;
-      border-radius: 7px;
+      //border-radius: 7px;
 
       li {
         margin: 0 10px 0 10px;
         a, a:hover, a:active {
-          padding: 3px 20px 3px 20px;
+          padding: 5px 20px 5px 20px;
           color: white;
           background-color: $color-theme;
           text-decoration: none;
