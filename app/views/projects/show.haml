@@ -42,7 +42,7 @@
 / Project Navigation
 .project-nav
   - if not @project_previous.nil?
-    .previous
+    .previous.hidden-sm.hidden-xs
       = link_to @project_previous do
         %i.fa.fa-chevron-left
         = @project_previous.title
@@ -51,7 +51,7 @@
     = link_to 'X', projects_path
 
   - if not @project_next.nil?
-    .next
+    .next.hidden-sm.hidden-xs
       = link_to @project_next do
         = @project_next.title
         %i.fa.fa-chevron-right
