@@ -49,8 +49,7 @@
         = @project_previous.title
 
   .overview
-    = link_to projects_path, {:title => t('views.back_to_gallery'), "data-toggle" => "tooltip"} do
-      %i.fa.fa-th
+    = link_to 'X', projects_path
 
   - if not @project_next.nil?
     .next
