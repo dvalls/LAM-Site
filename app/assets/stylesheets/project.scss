@@ -32,21 +32,6 @@ p.description {margin: 25px 0 25px 0}
   p img  {padding: 20px 0 20px 0}
 }
 
-.two-columns {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 30px; /* Saf3, Chrome*/
-  -moz-column-count: 2;
-  -moz-column-gap: 30px; /* FF3.5+ */
-  column-count: 2;
-  column-gap: 30px; /* Opera 11+*/
-
-  text-align: justify;
-  text-justify: inter-word;
-
-  webkit-column-rule: 1px outset #d6d6d6; /* Chrome, Safari, Opera */
-  -moz-column-rule: 1px outset #d6d6d6; /* Firefox */
-  column-rule: 1px outset #d6d6d6;
-}
 
 .project-nav {
 
