@@ -33,11 +33,18 @@ module ApplicationHelper
 
     @html = Redcarpet::Markdown.new(HtmlWithMarkdown, extensions).render(text).html_safe
 
+
+    # Hack make 1 column tag avaiable
+    @html = @html.gsub(/<1-col>(.*?)<1-col>/m) do |match|
+      "<div class='one-col'>#{match}</div>"
+    end
+    @html = @html.gsub('<1-col>', '')
+
+
     # Hack make 2 columns tag avaiable
     @html = @html.gsub(/<2-col>(.*?)<2-col>/m) do |match|
       "<div class='two-col'>#{match}</div>"
     end
-
     @html = @html.gsub('<2-col>', '')
 
     @html = raw @html

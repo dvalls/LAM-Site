@@ -77,6 +77,12 @@ nav {
   p {margin-bottom: 20px}
 }
 
+
+.one-col {
+  text-align: left;
+  width: 40%;
+}
+
 .two-col {
   -webkit-column-count: 2;
   -webkit-column-gap: 30px; /* Saf3, Chrome*/
