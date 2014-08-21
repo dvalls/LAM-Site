@@ -2,7 +2,7 @@
   / Facebook meta-tags
   %meta{content: "#{@project.cover_image}", property: "og:image"}
   %meta{content: "#{ENV['OFFICE_NAME'] + ' - ' +  @project.title}", property: "og:title"}
-  %meta{content: "#{t('meta.description')}", property: "og:description"}
+  %meta{content: "#{@project.description}", property: "og:description"}
   %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:site_name"}
 
 %header
@@ -13,13 +13,6 @@
 
   .close-project= link_to 'X', projects_path
 
-.row
-  .col-lg-5
-    &#126;&#126;&#126;
-
-    %p.description=  @project.description.html_safe
-
-    &#126;&#126;&#126;
 
 / Project Body
 .markdown.clearfix= markdown @project.body unless @project.body.nil?
