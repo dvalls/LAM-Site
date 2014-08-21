@@ -3,7 +3,7 @@
 
   = f.input :slug
   = f.input :title
-  = f.input :description, input_html: {:rows => '20'}
+  = f.input :description
   = image_tag @project.cover_image.url
   = f.input :cover_image, as: :file
   = f.association :categories, as: :check_boxes

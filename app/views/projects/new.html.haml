@@ -4,7 +4,7 @@
   .form-inputs
     = f.input :slug
     = f.input :title
-    = f.input :description, input_html: {:rows => '20'}
+    = f.input :description
     = f.association :categories, as: :check_boxes
     = f.input :year, as: :date,  discard_day: true
 
