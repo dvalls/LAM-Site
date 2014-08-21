@@ -29,7 +29,18 @@ module ApplicationHelper
         # space_after_headers: true
 
     }
-    Redcarpet::Markdown.new(HtmlWithMarkdown, extensions).render(text).html_safe
+
+
+    @html = Redcarpet::Markdown.new(HtmlWithMarkdown, extensions).render(text).html_safe
+
+    # Hack make 2 columns tag avaiable
+    @html = @html.gsub(/<2-col>(.*?)<2-col>/m) do |match|
+      "<div class='two-col'>#{match}</div>"
+    end
+
+    @html = @html.gsub('<2-col>', '')
+
+    @html = raw @html
 
   end
 
