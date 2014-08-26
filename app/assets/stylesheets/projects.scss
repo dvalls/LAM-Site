@@ -10,14 +10,19 @@
     border-bottom: 1px dotted;
     font-family: 'Open Sans',  helvetica, arial, sans-serif;
   }
+
+
 }
 
-.project-name {padding: 5px 0 5px 0}
+.project-name {padding: 5px 0 5px 0;}
 
 // Grid Projects MixItUp
 #Grid .mix{display: none;}
 
-ul#Grid {padding: 0}
+ul#Grid {
+  padding: 0;
+  a:hover { text-decoration: none}
+}
 
 li.filter {cursor: pointer;}
 
@@ -33,5 +38,5 @@ li.filter {cursor: pointer;}
 }
 
 .lighter img:hover {
- -webkit-filter: saturate(2);
+ -webkit-filter: brightness(.85);
 }
