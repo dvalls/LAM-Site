@@ -55,7 +55,7 @@ nav {
 
     ul.nav {
       background-color: $color-theme;
-      border-radius: 7px;
+      //border-radius: 7px;
 
       li {
         margin: 0 10px 0 10px;
@@ -73,8 +73,9 @@ nav {
 
 // Footer items
 footer {
+  margin-bottom: 25px;
   p {margin-top: 20px}
-  #description {margin: 100px 0 50px 0;}
+  #description {margin: 100px 0 25px 0;}
 
   ul.social {
     float: right;
