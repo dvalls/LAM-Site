@@ -1,3 +1,8 @@
+- content_for :head do
+  = javascript_include_tag "jquery.mixitup.min", "mixitup"
+  = stylesheet_link_tag "projects"
+
+
 / Menu Projects
 %ul#navGrid.col-sm-12
   %li.filter{"data-filter" => "all"}
@@ -22,9 +27,5 @@
           = '- ' + project.title
           = ' (NÃO PUBLICADO)' if not project.publish?
 
-
-
-= javascript_include_tag "jquery.mixitup.min", "mixitup"
-= stylesheet_link_tag "projects"
 
 = link_to('NOVO PROJETO', new_project_path, :class => 'btn btn-primary') if signed_in?
