@@ -29,7 +29,7 @@ li.filter {cursor: pointer;}
 /*LIGHTER*/
 .lighter {border: 1px dotted lightgray}
 .lighter img {
-  -webkit-filter: grayscale(.5) ;
+  -webkit-filter: saturate(.25) ;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -38,5 +38,5 @@ li.filter {cursor: pointer;}
 }
 
 .lighter img:hover {
- -webkit-filter: grayscale(0);
+ -webkit-filter: saturate(1);
 }
