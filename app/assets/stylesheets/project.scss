@@ -40,7 +40,7 @@ article header h1 {
   margin: 100px 0 50px 0;
   height: 30px;
 
-  a {color: white; text-decoration: none;  font-family: 'Open Sans', helvetica, arial, sans-serif;}
+  a, a:hover {color: white; text-decoration: none;  font-family: 'Open Sans', helvetica, arial, sans-serif;}
 
   .previous {
     float: left; text-align: left;
