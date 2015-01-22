@@ -38,7 +38,6 @@ $color-theme: black;
 
 // Ruler
 $offset-contents: 75px;
-
 .container {-webkit-font-smoothing: antialiased; }
 
 #i18n {
@@ -126,7 +125,6 @@ ul.feeds {
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "responsive";
-
 
 .alert {
   position: absolute;
