@@ -26,8 +26,8 @@
         %b= feed.title
         |
         =l feed.updated_at.to_date, format: :default
-      = image_tag feed.image.url(:thumb) unless feed.image.blank?
       %p= markdown(feed.body)
+      = image_tag feed.image.url(:thumb) unless feed.image.blank?
 
 
 =link_to t('views.all_news'), feeds_path
