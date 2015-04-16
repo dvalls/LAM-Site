@@ -10,9 +10,9 @@
   - @carousels.each do |carousel|
     %tr
       %td= carousel.order
-      %td= carousel.project.title
-      %td= carousel.title
-      %td= carousel.description
+      %td= carousel.project.title unless carousel.project.title.nil?
+      %td= carousel.title unless carousel.title.nil?
+      %td= carousel.description unless carousel.description.nil?
       %td= image_tag carousel.image_url.url(:thumb)
       %td
         = link_to 'EDITAR', edit_carousel_path(carousel)
