@@ -61,7 +61,7 @@ nav {
 
       li {
         //margin: 0 5px 0 5px;
-        a, a:hover, a:active {
+        a, a:hover, a:active, a:link, a:visited {
           padding: 5px 20px 5px 20px;
           color: white;
           background-color: $color-theme;
