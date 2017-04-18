@@ -21,9 +21,14 @@
 // Typography
 $font-family-base: 'Ubuntu Mono', helvetica, arial, sans-serif;
 $font-size-base: 14px;
+<<<<<<< HEAD
 $line-height-base: 1.2;
+=======
+$line-height-base: 1.25;
+>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
 
 $headings-font-family: 'Open Sans';
+$headings-font-weight: '700';
 //$font-size-h1: $font-size-base * 5;
 //$font-size-h2: $font-size-base * 4;
 //$font-size-h3: $font-size-base * 3;
@@ -35,6 +40,8 @@ $headings-font-family: 'Open Sans';
 $link-color: black;
 $color-theme: black;
 
+// Ruler
+$offset-contents: 75px;
 .container {-webkit-font-smoothing: antialiased; }
 
 #i18n {
@@ -44,7 +51,7 @@ $color-theme: black;
 
 header {
   margin-top: 50px;
-  margin-bottom: 75px;
+  margin-bottom: $offset-contents;
 }
 
 
@@ -55,12 +62,15 @@ nav {
 
     ul.nav {
       background-color: $color-theme;
+<<<<<<< HEAD
       //border-radius: 7px;
+=======
+>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
 
       li {
-        margin: 0 10px 0 10px;
-        a, a:hover {
-          padding: 3px 20px 3px 20px;
+        //margin: 0 5px 0 5px;
+        a, a:hover, a:active, a:link, a:visited {
+          padding: 5px 20px 5px 20px;
           color: white;
           background-color: $color-theme;
           text-decoration: none;
@@ -69,13 +79,46 @@ nav {
     }
 }
 
+.markdown {
+  p {margin-bottom: 20px}
+}
+
+
+.one-col {
+  text-align: left;
+  width: 40%;
+}
+
+.two-col {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 30px; /* Saf3, Chrome*/
+  -moz-column-count: 2;
+  -moz-column-gap: 30px; /* FF3.5+ */
+  column-count: 2;
+  column-gap: 30px; /* Opera 11+*/
+
+  text-align: justify;
+  text-justify: inter-word;
+
+  webkit-column-rule: 1px outset #d6d6d6; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px outset #d6d6d6; /* Firefox */
+  column-rule: 1px outset #d6d6d6;
+}
+
+
 .navbar-collapse {padding: 0 !important;}
 
 // Footer items
 footer {
+<<<<<<< HEAD
   margin-bottom: 25px;
   p {margin-top: 20px}
   #description {margin: 100px 0 25px 0;}
+=======
+  margin-bottom: 10px;
+  p {margin-top: 20px}
+  #description {margin: $offset-contents 0 $offset-contents 0;}
+>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
 
   ul.social {
     float: right;
@@ -99,12 +142,7 @@ ul.feeds {
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-//// TODO aprimorar
-//.form-horizontal .form-group {
-//  margin-left: 0;
-//  margin-right: 0px;
-//}
+@import "responsive";
 
 .alert {
   position: absolute;

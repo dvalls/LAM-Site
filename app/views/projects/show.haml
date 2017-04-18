@@ -1,10 +1,12 @@
 - content_for :head do
   / Facebook meta-tags
   %meta{content: "#{@project.cover_image}", property: "og:image"}
-  %meta{content: "#{@project.title}", property: "og:title"}
+  %meta{content: "#{ENV['OFFICE_NAME'] + ' - ' +  @project.title}", property: "og:title"}
   %meta{content: "#{@project.description}", property: "og:description"}
   %meta{content: "#{ENV['OFFICE_NAME']}", property: "og:site_name"}
 
+  = stylesheet_link_tag "project"
+  = javascript_include_tag "jquery.lazyload.min", "project"
 
 %header
 
@@ -14,21 +16,14 @@
 
   .close-project= link_to 'X', projects_path
 
-.row
-  %em.col-lg-4
-    &#126;&#126;&#126;
-
-    %p.description= @project.description
-
-    &#126;&#126;&#126;
 
 / Project Body
-.markdown= markdown @project.body unless @project.body.nil?
+.markdown.clearfix= markdown @project.body unless @project.body.nil?
 
 
 / Social Links
 %ul.list-inline
-  Compartilhe este projeto:
+  =t('views.share_this_project') + ':'
   %li
     = link_to 'https://www.facebook.com/sharer/sharer.php?u=' + request.original_url, :target => "_blank" do
       %i.fa.fa-facebook.fa-lg
@@ -43,23 +38,19 @@
 / Project Navigation
 .project-nav
   - if not @project_previous.nil?
-    .previous
+    .previous.hidden-sm.hidden-xs
       = link_to @project_previous do
         %i.fa.fa-chevron-left
         = @project_previous.title
 
   .overview
-    = link_to projects_path do
-      %i.fa.fa-th
+    = link_to 'X', projects_path
 
   - if not @project_next.nil?
-    .next
+    .next.hidden-sm.hidden-xs
       = link_to @project_next do
         = @project_next.title
         %i.fa.fa-chevron-right
-
-= stylesheet_link_tag "project"
-= javascript_include_tag "jquery.lazyload.min", "project"
 
 - if signed_in?
   %p.clearfix

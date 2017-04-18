@@ -4,7 +4,7 @@ pt-BR:
     description: |
       Somos um escritório de projeto com base em Porto Alegre, sul do Brasil.
       Desenvolvemos projetos em diferentes escalas e usos, com uma linha de abordagem transversal que abrange as áreas de arquitetura, engenharia e software.
-    keywords: Arquitetura Porto Alegre, ...
+    keywords: Arquiteto Porto Alegre, Arquitetura Porto Alegre, Escritório de Arquitetura, Arquitetura Moderna Porto Alegre, Arquitetura Contemporânea Porto Alegre, Arquiteto Gaúcho, Arquitetura RS, BIM, Escritório Arquitetura Gravataí, Projeto
 
   nav:
     projects: projetos
@@ -13,14 +13,6 @@ pt-BR:
     contact: contato
     all_projects: todos
 
-
-  phone: +51 3379-7679
-  email: contato@valls.cc
-  address: |
-    Rua Santo Antônio, 366. Sala 04
-    Bairro Independência
-    Porto Alegre - RS
-    CEP 90220-010
 
   copyright: 'todos direitos reservados - '
 
@@ -34,7 +26,8 @@ pt-BR:
     all_news: + notícias
     share: Compartilhar
     close: Fechar
-    like_us: Curta nossa página
+    share_this_project: Compartilhe este projeto
+    back_to_gallery: Voltar galeria
 
 
     updated_ok: Informações atualizadas com sucesso.

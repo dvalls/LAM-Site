@@ -6,7 +6,7 @@ article header h1 {
   font-size: 36px;
   font-weight: 700;
   display:inline;
-  border-radius: 7px;
+  //border-radius: 5px;
   padding: 0 20px 0 20px;
 
   span#project-title {font-weight: 300; letter-spacing: -1px}
@@ -17,41 +17,36 @@ article header h1 {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
-  a {text-decoration: none;}
+  a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
 }
 
-p.description {margin: 25px 0 25px 0}
 
 .markdown {
 
-  margin: 100px 0 100px 0;
+  margin-bottom: 100px;
+  font-style: 12px;
 
-  h1, h2 {margin-top: 50px}
+  h1, h2, h3 {margin-top: 50px;  letter-spacing: -1px}
   h4 {margin-top: 25px}
-  p img  {padding: 40px 0 40px 0}
-  p:nth-child(1) .center-block {padding: 0}
-
-  .column-2 {
-    width: 50%; margin-left: 50%;
-    //img {float: right}
-  }
+  p img  {padding: 20px 0 20px 0}
 }
+
 
 .project-nav {
 
   background-color: black;
-  border-radius: 7px;
-  padding: 5px;
+  //border-radius: 5px;
+  padding: 7px 5px 5px 5px;
   margin: 100px 0 50px 0;
   height: 30px;
 
-  a {color: white; text-decoration: none;  font-family: 'Open Sans', helvetica, arial, sans-serif;}
+  a, a:hover {color: white; text-decoration: none;  font-family: 'Open Sans', helvetica, arial, sans-serif;}
 
   .previous {
     float: left; text-align: left;
     a > i {margin: 0 30px 0 10px}
   }
-  .overview {left: 50%; text-align: center; position: absolute;}
+  .overview {left: 50%; text-align: center; position: absolute; font-weight: 700}
   .next {
     float: right; text-align: right;
     a > i {margin: 0 10px 0 30px}

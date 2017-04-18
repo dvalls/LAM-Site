@@ -1,5 +1,9 @@
+- content_for :head do
+  = stylesheet_link_tag "projects"
+
+
 / Menu Projects
-%ul#navGrid
+%ul#navGrid.col-sm-12
   %li.filter{"data-filter" => "all"}
     = t 'nav.all_projects'
   - @categories.each do |category|
@@ -23,8 +27,6 @@
           = ' (NÃO PUBLICADO)' if not project.publish?
 
 
+= link_to('NOVO PROJETO', new_project_path, :class => 'btn btn-primary') if signed_in?
 
 = javascript_include_tag "jquery.mixitup.min", "mixitup"
-= stylesheet_link_tag "projects"
-
-= link_to('NOVO PROJETO', new_project_path, :class => 'btn btn-primary') if signed_in?
