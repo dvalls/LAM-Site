@@ -14,21 +14,21 @@ class ProjectsController < ApplicationController
     @categories = Category.all
   end
 
-
   def show
-    render layout: 'project'
+    if @project.redirect_url.empty?
+      render layout: 'project'
+    else
+      redirect_to @project.redirect_url
+    end
   end
-
 
   def new
     @project = Project.new
   end
 
-
   def edit
     @images = @project.images
   end
-
 
   def create
     @project = Project.new(project_params)
@@ -40,7 +40,6 @@ class ProjectsController < ApplicationController
     end
   end
 
-
   def update
     if @project.update(project_params)
       redirect_to @project, notice: t('views.updated_ok')
@@ -49,7 +48,6 @@ class ProjectsController < ApplicationController
       render action: 'edit'
     end
   end
-
 
   def destroy
     @project.destroy
@@ -67,6 +65,6 @@ class ProjectsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def project_params
-      params.require(:project).permit(:title, :description, :body, :year, :slug, :cover_image, :publish, :category_ids => [])
+      params.require(:project).permit(:title, :description, :body, :year, :slug, :cover_image, :publish, :redirect_url, :category_ids => [])
     end
 end

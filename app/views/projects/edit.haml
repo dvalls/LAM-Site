@@ -18,6 +18,8 @@
 
   = f.input :body, as: :text, input_html: {'data-provide' => 'markdown',  :rows => '50'}
   = f.input :publish
+  = f.input :redirect_url, label: 'Redirecionar para:'
+
 
   .form-actions
     = f.button :submit, 'ATUALIZAR PROJETO', :class => 'btn btn-primary'
