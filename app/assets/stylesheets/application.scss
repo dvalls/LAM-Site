@@ -26,11 +26,7 @@ $grid-float-breakpoint:     768px;
 
 $font-family-base: "Ubuntu Mono", helvetica, arial, sans-serif;
 $font-size-base: 14px;
-//<<<<<<< HEAD
 $line-height-base: 1.2;
-//=======
-$line-height-base: 1.25;
-//>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
 
 $headings-font-family: 'Open Sans';
 $headings-font-weight: '700';
@@ -67,10 +63,7 @@ nav {
 
   ul.nav {
       background-color: $color-theme;
-    //<<<<<<< HEAD
       //border-radius: 7px;
-    //=======
-    //>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
 
       li {
       //margin: 0 5px 0 5px;
