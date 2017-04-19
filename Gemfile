@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.3.3'
-gem 'rails', '4.0.13'
+gem 'rails', '4.0.13' # era '4.0.0'
 
 # View and Stylish
 gem 'haml-rails'
