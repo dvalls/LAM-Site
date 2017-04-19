@@ -15,7 +15,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    if @project.redirect_url.empty?
+    if @project.redirect_url.blank?
       render layout: 'project'
     else
       redirect_to @project.redirect_url
