@@ -1,11 +1,5 @@
 source 'https://rubygems.org'
-source 'http://gems.github.com'
-
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
+ruby '2.3.3'
 gem 'rails', '4.0.13'
 
 # View and Stylish
