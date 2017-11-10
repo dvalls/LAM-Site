@@ -39,8 +39,10 @@ $headings-font-weight: '700';
 
 // Color
 $brand-primary:  black !default;
-$link-color: black;
+$link-color: black  !default;
 $color-theme: black;
+
+a {color:  $link-color;}
 
 // Ruler
 $offset-contents: 75px;
