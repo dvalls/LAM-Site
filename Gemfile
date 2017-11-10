@@ -4,7 +4,7 @@ gem 'rails', '4.0.13' # era '4.0.0'
 
 # View and Stylish
 gem 'haml-rails'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
 gem 'simple_form'
 
 gem 'bootstrap-sass', '~> 3.3.7'
