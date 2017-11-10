@@ -20,7 +20,7 @@ $grid-float-breakpoint:     768px;
 //
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "responsive";
+
 
 // Typography
 
@@ -153,6 +153,6 @@ ul.feeds {
   span {background-color: $color-theme;}
 }
 
-
+@import "responsive";
 
 
