@@ -38,7 +38,7 @@ $headings-font-weight: '700';
 
 
 // Color
-$link-color: black;
+$link-color: #0000;
 $color-theme: black;
 
 // Ruler
@@ -108,15 +108,15 @@ nav {
 
 // Footer items
 footer {
-//<<<<<<< HEAD
+
   margin-bottom: 25px;
   p {margin-top: 20px}
   #description {margin: 100px 0 25px 0;}
-//=======
+
   margin-bottom: 10px;
   p {margin-top: 20px}
   #description {margin: $offset-contents 0 $offset-contents 0;}
-//>>>>>>> 2cc28358fc36c8c112a6ddcf9a26033278496e4a
+
 
   ul.social {
   float: right;
