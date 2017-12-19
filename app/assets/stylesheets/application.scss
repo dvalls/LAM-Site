@@ -38,7 +38,7 @@ $headings-font-weight: '700';
 
 
 // Color
-$link-color: black;
+//$link-color: black;
 $brand-primary: black;
 $color-theme: black;
 
@@ -127,6 +127,11 @@ footer {
 }
 
 .icon-margin i {margin-left: 5px;}
+
+a, a:hover, a:active, a:link, a:visited {
+  background-color: black !important;
+}
+
 
 // Main items
 ul.feeds {
